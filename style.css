@@ -1,0 +1,131 @@
+/* ---- Fonts ---- */
+
+@font-face {
+    font-family: 'Creepster';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Creepster-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/SourceSerifPro-Regular.ttf') format('truetype');
+}
+
+/* ---- Page setup ---- */
+
+@page {
+    /* size: A5; */
+    size: 110mm 170mm;
+    /* margin: 20mm 18mm; */
+
+    @bottom-center {
+        content: counter(page);
+        /* font-family: 'Creepster', cursive; */
+        /* font-size: 12pt; */
+        color: #444;
+    }
+}
+
+/* Cover page - full bleed, no page number */
+@page cover {
+    margin: 0;
+
+    @bottom-center {
+        content: none;
+    }
+}
+
+.cover {
+    page: cover;
+}
+
+.cover img {
+    bottom: 0;
+    height: 170mm;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    object-fit: cover;
+    position: absolute;
+    width: 110mm;
+    z-index: 1;
+}
+
+@page :left {
+  margin: 20mm 10mm 12mm 15mm;
+}
+@page :right {
+  margin: 20mm 15mm 12mm 10mm;
+}
+
+/* ---- Base typography ---- */
+
+html {
+    font-family: 'SourceSerifPro', serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+/* ---- Cover / title page ---- */
+
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 32pt;
+    text-align: center;
+    margin-top: 40mm;
+    color: #2d6a1e;
+    line-height: 1.2;
+}
+
+/* ---- Section headings (each is a new page) ---- */
+
+h2 {
+    font-family: 'SourceSerifPro', serif;
+    font-size: 22pt;
+    /* color: #2d6a1e; */
+    break-before: page;
+    margin-top: 8mm;
+    margin-bottom: 6mm;
+    line-height: 1.2;
+}
+
+/* ---- Body content ---- */
+
+p {
+    margin-bottom: 0.8em;
+}
+
+ol, ul {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.4em;
+}
+
+/* ---- Internal links: show target page number ---- */
+
+a[href^="#"] {
+    color: #2d6a1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href^="#"]::after {
+    content: " (page " target-counter(attr(href url), page) ")";
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* ---- Images ---- */
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+}
