@@ -2,29 +2,27 @@ PANDOC = pandoc
 WEASYPRINT = uvx weasyprint
 BASEDIR = $(shell pwd)
 
-BOOK = generator
-SRC = $(BOOK).md
-HTML = build/$(BOOK).html
-PDF = build/$(BOOK).pdf
+SOURCES = $(wildcard src/*.md)
+HTMLS = $(patsubst src/%.md,build/%.html,$(SOURCES))
+PDFS = $(patsubst src/%.md,build/%.pdf,$(SOURCES))
 
 .PHONY: all clean
 
-all: $(PDF)
+all: $(PDFS)
 
 build:
 	mkdir -p build
 
-$(HTML): $(SRC) template.html style.css | build
-	$(PANDOC) $(SRC) \
+build/%.html: src/%.md template.html style.css | build
+	$(PANDOC) $< \
 		--template=template.html \
 		--css=style.css \
-		--metadata title="Greasebumps: Generator Troubleshooting" \
 		--from=markdown \
 		--to=html5 \
-		-o $(HTML)
+		-o $@
 
-$(PDF): $(HTML) style.css
-	$(WEASYPRINT) --base-url $(BASEDIR) $(HTML) $(PDF)
+build/%.pdf: build/%.html style.css
+	$(WEASYPRINT) --base-url $(BASEDIR) $< $@
 
 clean:
 	rm -rf build
