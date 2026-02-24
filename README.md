@@ -25,6 +25,7 @@ The technical stack is as follows:
  - The html is rendered to a PDF using WeasyPrint
  - Custom css is provided to make use of `target-counter` - this is crucial for keeping track of page numbers.
  - A Makefile orchestrates this build pipeline
+ - A github workflow runs the makefile on commit to `main`
 
 ## Content
 
