@@ -10,7 +10,7 @@ The Greasemonkey workshop is a [Radical Self Reliance](https://quaggapedia.afrik
 
 Greasebumps aims to be one of these resources. We intend to publish a series of friendly handbooks to guide any reader through the steps necessary to diagnose, understand, and fix their problem.
 
-Each handbook will be a decision tree, presented in the style of a choose your own adventure book, drawing specific inspiration from the Goosebumps series of novels by RL Stein.
+Each handbook will be a decision tree, presented in the style of a [choose your own adventure book](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure), drawing specific inspiration from the Goosebumps series of novels by RL Stein.
 
 Each page (or double page) represents a step in the readers journey through the diagnostic decision tree, presenting a number of choices based on the results of the tests presented. Additionally, each page will provide context and understanding for why the test is necessary, what would be learned by it, and what we can do with that information.
 
