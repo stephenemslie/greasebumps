@@ -1,10 +1,10 @@
 PANDOC = pandoc
 WEASYPRINT = uvx weasyprint
-BASEDIR = $(shell pwd)
+SRCDIR = src
+BASEDIR = $(shell pwd)/$(SRCDIR)
 
-SOURCES = $(wildcard src/*.md)
-HTMLS = $(patsubst src/%.md,build/%.html,$(SOURCES))
-PDFS = $(patsubst src/%.md,build/%.pdf,$(SOURCES))
+SOURCES = $(wildcard $(SRCDIR)/*.md)
+PDFS = $(patsubst $(SRCDIR)/%.md,build/%.pdf,$(SOURCES))
 
 .PHONY: all clean
 
@@ -13,15 +13,15 @@ all: $(PDFS)
 build:
 	mkdir -p build
 
-build/%.html: src/%.md template.html style.css | build
+build/%.html: $(SRCDIR)/%.md $(SRCDIR)/template.html $(SRCDIR)/style.css | build
 	$(PANDOC) $< \
-		--template=template.html \
+		--template=$(SRCDIR)/template.html \
 		--css=style.css \
 		--from=markdown \
 		--to=html5 \
 		-o $@
 
-build/%.pdf: build/%.html style.css
+build/%.pdf: build/%.html $(SRCDIR)/style.css
 	$(WEASYPRINT) --base-url $(BASEDIR) $< $@
 
 clean:
