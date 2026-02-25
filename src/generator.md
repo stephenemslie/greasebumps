@@ -24,7 +24,25 @@ But first — before you touch a single bolt — do these quick checks. This is 
 
 All good? Now — what's your generator doing?
 
- - Doesn't start at all
+ - [[#Doesn't start at all]]
  - Starts but runs poorly
  - Engine runs but there's no electricity
  - It overheated and stopped
+
+## Doesn't start at all
+
+[[#Starting a generator]]
+
+## Starting a generator
+
+  1. Check oil and fuel. Make sure there's enough of both. Running without oil will destroy the engine.
+  2. Position it safely. Outdoors, on a flat stable surface, well away from tents and enclosed spaces. Generator exhaust is deadly.
+  3. Disconnect any appliances. Don't start it under load.
+  4. Open the fuel tap. This lets fuel flow to the carburettor.
+  5. Close the choke. A cold engine needs a richer fuel mixture to start. The choke restricts airflow to make that happen. ![](images/honda/choke_close.png)
+  6. Turn the engine switch to "on."
+  7. Start the engine.
+    - Electric start: Press the start button or turn the key.
+    - Pull start: Pull the cord gently until you feel resistance — stop — then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again. ![](images/honda/pull.png)
+  8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. ![](images/honda/choke_open.png)
+  9. Let it warm up. Give it a minute or two before plugging anything in.
