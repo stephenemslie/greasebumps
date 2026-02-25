@@ -17,7 +17,8 @@ build/%.html: $(SRCDIR)/%.md $(SRCDIR)/template.html $(SRCDIR)/style.css | build
 	$(PANDOC) $< \
 		--template=$(SRCDIR)/template.html \
 		--css=style.css \
-		--from=markdown \
+		--from=markdown+wikilinks_title_after_pipe \
+		--lua-filter=$(SRCDIR)/wikilinks.lua \
 		--to=html5 \
 		-o $@
 
