@@ -2,6 +2,8 @@
 
 Choose your own Greasemonkey adventure.
 
+ - [Watt's The Problem?](src/generator.md)
+
 ## Why?
 
 The process of diagnosing and repairing mechanical problems can usually be broken down into something resembling a decision tree. Whether it be a sputtering generator, a vehicle belching smoke, or just a good old fashiond bike with a flat tire, each fix involves diagnosing the problem, understanding it and the possible solutions, and then monkeying up a fix.
