@@ -38,11 +38,15 @@
     }
 }
 
-.cover {
+figure:has(img.cover) {
     page: cover;
 }
 
-.cover img {
+figure:has(img.cover) figcaption {
+    display: none;
+}
+
+img.cover {
     bottom: 0;
     height: 170mm;
     left: 0;

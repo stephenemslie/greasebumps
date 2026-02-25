@@ -1,6 +1,4 @@
-<div class="cover">
-![Cover](images/cover_generator.png)
-</div>
+![Cover](images/cover_generator.png){.cover}
 
 # Watt's The Problem {#generator-problem}
 
