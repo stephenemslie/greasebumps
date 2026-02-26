@@ -6,7 +6,7 @@
 
 Generator given up the ghost? Ware-and-tear-wolves getting you down? Don't get spooked — most generator problems come down to four things, and you can check all of them with your hands, eyes, and a few simple tools.
 
-Every engine needs four things to run: **Fuel**, **Spark**, **Compression**, and **Air**. Petrol has to get from the tank, through the tap and lines, into the carburettor, and into the cylinder. The spark plug has to fire at the right moment to ignite it. The cylinder has to be sealed tight so the fuel-air mixture gets squeezed and explodes with force. And clean air has to mix with the fuel in the right ratio.
+Every engine needs four  things to run: **Fuel**, **Spark**, **Compression**, and **Air**. Petrol has to get from the tank, through the tap and lines, into the carburettor, and into the cylinder. The spark plug has to fire at the right moment to ignite it. The cylinder has to be sealed tight so the fuel-air mixture gets squeezed and explodes with force. And clean air has to mix with the fuel in the right ratio.
 
 If any one of these is missing, the engine won't run. Our job is to figure out which one it is.
 
@@ -14,6 +14,7 @@ But first — before you touch a single bolt — do these quick checks. This is 
 
 ## Pre-flight checks
 
+ - Are you correctly starting your generator? - [[#Starting a generator]]
  - **Fuel in the tank?** Is it the right kind — normal petrol, not 2-stroke mix or diesel?
  - **Oil level OK?** Most generators have a low-oil cutoff. If it won't start, this alone might be why.
  - **Fuel tap open?** Vertical is usually open, horizontal is closed — but just try both to be sure.
@@ -33,6 +34,17 @@ All good? Now — what's your generator doing?
 
 [[#Starting a generator]]
 
+So you've gone through the steps — fuel on, choke closed, switch on, pull the cord or turn the key — and... nothing. Let's narrow it down.
+
+What happens when you try to start it? Watch and listen carefully:
+
+ - Nothing at all. No sound, no movement, completely dead. [[#Dead silent]]
+ - It clicks or whirrs, but the engine doesn't turn over. The starter is trying but the engine isn't moving. [[#Clicks but won't crank]]
+ - The engine turns over, but won't catch. You can hear it cranking - or feel it turning on the pull cord - but it never fires. [[#Cranks but won't catch]]
+ - It fires briefly then dies. It catches for a moment - maybe a cough or a sputter - then stops. [[#Fires then dies]]
+
+If you're on a pull-start generator and you're not sure whether the engine is "turning over," here's what to feel for: when you pull the cord, you should feel the resistance of the engine compressing. If the cord pulls freely with no resistance, something is mechanically wrong. If it feels normal but the engine never fires, that's "cranks but won't catch."
+
 ## Starting a generator
 
   1. Check oil and fuel. Make sure there's enough of both. Running without oil will destroy the engine.
@@ -46,3 +58,14 @@ All good? Now — what's your generator doing?
     - Pull start: Pull the cord gently until you feel resistance — stop — then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again. ![](images/honda/pull.png)
   8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. ![](images/honda/choke_open.png)
   9. Let it warm up. Give it a minute or two before plugging anything in.
+
+
+## Dead silent
+
+
+## Clicks but won't crank
+
+
+## Cranks but won't catch
+
+## Fires then dies
