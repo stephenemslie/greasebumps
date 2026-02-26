@@ -62,6 +62,16 @@ If you're on a pull-start generator and you're not sure whether the engine is "t
 
 ## Dead silent
 
+You try to start it and absolutely nothing happens. No click, no whirr, no sign of life.
+
+If your generator has a pull start, try that first — even if you normally use the electric start. Give it a proper pull (remember: gently to the resistance point, then pull firmly).
+
+Did it start on the pull cord?
+
+ - Yes, it started! Your engine is fine. The problem is in the electric starting circuit - the battery, the starter motor, or the wiring between them. You can keep pull-starting for now. Sounds like it's [[#Good Enough For The Burn]]. If you really like fixing things, then you could always [[#Check the starting circuit]].
+ - It cranks on the pull cord, but won't catch. The engine can turn, so it's not seized. The starting circuit isn't your problem - something else is stopping it from firing. [[#Cranks but won't catch]]
+ - The pull cord has no resistance / the engine won't turn. The engine might be seized. [[#Engine won't turn]]
+ - There's no pull start on this generator. Let's [[#Check the starting circuit]]
 
 ## Clicks but won't crank
 
@@ -69,3 +79,28 @@ If you're on a pull-start generator and you're not sure whether the engine is "t
 ## Cranks but won't catch
 
 ## Fires then dies
+
+## Good Enough For The Burn
+
+## Check the starting circuit
+
+The electric start system is simple: battery → switch → solenoid → starter motor. We're going to check each link in that chain.
+
+Do you have a multimeter? If so, check the battery voltage. If not, that's fine — we can still narrow it down.
+
+ 1. Look at the battery terminals. Are they corroded, loose, or disconnected? Clean them up and tighten them. Even a thin layer of white or green crust can stop enough current getting through.
+ 2. Check the ground strap — the wire from the battery negative to the engine block or frame. If it's loose or broken, nothing will work. You can test this with jumper lead as a temporary ground.
+ 3. Check the key switch or kill switch. Is it in the right position? Try wiggling it. If you have a multimeter, check for continuity through the switch.
+ 4. Look for inline fuses on the battery or ignition wiring. A blown fuse is a quick fix.
+ 5. Listen for a relay click when you turn the key or press the start button. If you hear nothing at all, the relay, ignition switch, or wiring to it may be at fault.
+
+Still nothing?
+
+If you're comfortable with it, try bridging the starter solenoid terminals with a heavy jumper wire or screwdriver. This bypasses the switch and control circuit and sends power directly to the starter.
+
+ - The engine cranks! → The solenoid or control circuit is at fault, but the engine and starter motor are fine. You can keep starting it this way in a pinch, or seek Greasemonkey assistance for a proper fix. [[#Greasemonkey assistance]]
+ - Still nothing → The starter motor itself may be dead, or the battery is too flat to turn it. Try a jump start from a car battery or another charged battery, and if that doesn't work, seek Greasemonkey assistance.
+
+## Engine won't turn
+
+## Greasemonkey assistance
