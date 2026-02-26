@@ -31,16 +31,16 @@ The technical stack is as follows:
 
 ## Content
 
-Each book in the series will cover a particular area of mechanical diagnostic: generators, vehicles, bikes, solar panels. Within a book, each page will guide the user through a diagnostic, or an action based on the results of that diagnostic. For example:
+Each book covers a particular area of mechanical diagnostic: generators, vehicles, bikes, solar panels. Within a book, the reader is guided through steps of questions, diagnostics, and actions.
 
- - Is the fuel tank empty?
-  - Add Fuel
- - Check Spark
-  - Clean or replace spark plug
- - Check ignition coil
-  - Fix coil or adjust gap
+ 1. Start with a pre-flight checklist, based on Greasemonkey experience
+ 2. Ask questions to narrow done the problem
+ 3. Each problem section gives some orientation before jumping off to diagnostic pages
+ 4. A diagnotic page is both a page to learn about the topic, and to use that knowledge to identify or rule out a cause
+ 5. This jumps off to further diagnostics, or actions to make a fix
 
-In each of these sections, there may be diagrams to aid the reader.
+ - Books are intentionally small. Be concise.
+ - Where possible, use diagrams.
 
 ## Style
 
