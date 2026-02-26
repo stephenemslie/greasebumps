@@ -2,7 +2,7 @@
 
 Choose your own Greasemonkey adventure.
 
- - [Watt's The Problem?](src/generator.md) [pdf](https://github.com/stephenemslie/greasebumps/releases/tag/latest)
+ - [Watt's The Problem?](src/generator.md) [pdf](https://github.com/stephenemslie/greasebumps/releases/download/latest/generator.pdf)
 
 ## Why?
 
