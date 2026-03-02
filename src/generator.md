@@ -117,6 +117,39 @@ Now try to start it. Did it fire, even for a second?
 
 ## Fires then dies
 
+The engine catches — you hear it cough, sputter, maybe even run for a second or two — and then it dies. Every time. This is actually encouraging: it means spark and compression are probably working. The engine *wants* to run. Something is stopping it from staying lit.
+
+Let's work through the most likely causes, quickest fixes first.
+
+**Is the choke fully closed?** On a cold start, the engine needs a rich fuel mixture. If the choke is only partly closed — or if it's an auto-choke that isn't engaging — the mixture is too lean to sustain combustion. Close the choke fully, start the engine, and only open it gradually once it's warmed up and running steadily.
+
+- That fixed it! → [[#Good Enough For The Burn]]
+- Choke is fully closed, still dies → Keep reading.
+
+**Check the oil level.** We keep coming back to this one because it catches people out every time. Most generators have a low-oil safety cutoff that shuts the engine down — it'll fire briefly and then the sensor kills it. Check the dipstick. If the oil is low, top it up and try again.
+
+- That fixed it! → [[#Good Enough For The Burn]]
+- Oil is fine, still dies → Keep reading.
+
+**Try disconnecting the oil sensor.** The sensor itself can be faulty — it tells the engine there's no oil when there is. It's usually a single wire connector on the engine block, near the base. Pull it off and try starting.
+
+- It runs now! → The sensor was giving a false reading. You can leave it disconnected for the burn, but keep checking your oil manually — you've just disabled your safety net. → [[#Good Enough For The Burn]]
+- Still dies → Keep reading.
+
+**Is fuel reaching the carburettor steadily?** The engine might be burning through whatever fuel is in the carburettor bowl, but not getting refilled fast enough. Disconnect the fuel line at the carb and check — does fuel flow freely and steadily when the tap is open? If it's a trickle or stops after a moment, the fuel supply is the problem. → [[#Check fuel]]
+
+**Try the bypass bottle.** If you're not sure about the fuel supply, skip straight to the [[#Bypass fuel test]]. If the engine runs on the bypass bottle, the problem is somewhere in the tank, tap, line, or filter.
+
+**Check for vapour lock.** Feel along the fuel line — is any part of it running close to the engine or exhaust where it gets hot? Heat can boil fuel in the line, creating a gas bubble that blocks flow. The engine starts on the fuel already in the bowl, but once that's gone, no more can get through. Reroute the line away from heat sources, let everything cool, and try again.
+
+**Still fires and dies?** A few less common causes:
+
+- **Governor linkage.** The governor is what keeps the engine running at a steady speed. Without it, the engine would speed up when you unplug an appliance and slow down when you plug one in. It works by connecting the engine's spinning internals to the carburettor's throttle through a set of springs and levers on the outside of the engine. When the engine speeds up, the governor pulls the throttle closed a bit; when it slows down, the governor opens it up. It's a constant balancing act. The problem is that these springs and levers are exposed, and generators vibrate a lot. Over time — sometimes just over the course of a burn — the linkage can "walk": vibration gradually loosens an adjustment screw, stretches a spring, or shifts a lever, until the governor is so far out of calibration that it can't keep the engine in its sweet spot. The engine starves for air or fuel and stalls. Check that all the linkage moves freely, springs are attached and haven't stretched, and nothing has worked itself loose. If an adjustment screw has vibrated out of position, you may be able to see that it's no longer seated where it should be. A Greasemonkey can help recalibrate it if needed.
+- **Blocked exhaust.** A wasp nest, mud, or a crushed muffler can restrict exhaust flow enough to stall the engine. Check that air can flow out of the exhaust pipe.
+- **Sheared flywheel key.** If the engine has had a hard knock, the small metal key that locks the flywheel to the crankshaft can shear, throwing the ignition timing off. The engine might fire but can't sustain. This one is hard to diagnose in the field. → [[#Greasemonkey assistance]]
+
+If none of the above has helped, the problem may overlap with running issues — the engine is technically starting but can't sustain idle. → Something's Wrong (runs poorly)
+
 ## Check the starting circuit
 
 The electric start system is simple: battery → switch → solenoid → starter motor. We're going to check each link in that chain.
@@ -229,20 +262,109 @@ Got spark now?
 
 The carburettor is a surprisingly simple device. Fuel sits in a small reservoir called the bowl at the bottom. When the engine runs, air rushes through the carburettor's throat, and that airflow sucks fuel up through tiny holes called jets — like drinking through a straw. The fuel mixes with the air and gets pulled into the cylinder.
 
-The two main jets are the main jet (feeds fuel when the engine is running at speed) and the idle jet or pilot jet (feeds fuel at idle and low speed). These jets are tiny brass nozzles with holes smaller than a pin. It takes almost nothing to block them — a grain of dust, a flake of rust, a bit of dried-up old fuel.
+The two main jets are the **main jet** (feeds fuel when the engine is running at speed) and the **idle jet** or **pilot jet** (feeds fuel at idle and low speed). These jets are tiny brass nozzles with holes smaller than a pin. It takes almost nothing to block them — a grain of dust, a flake of rust, a bit of dried-up old fuel.
 
-A blocked jet is the single most common carburettor problem, especially on generators that have been sitting unused. The good news is that cleaning the carburettor is straightforward and doesn't require any special skills — just patience, a clean workspace, and a can of carb cleaner.
+A blocked jet is the single most common carburettor problem, especially on generators that have been sitting unused. But stripping and cleaning a carburettor in the desert is a last resort — dust gets everywhere, small parts vanish into the playa, and you can make things worse. Let's try a few things first.
 
-Drain the Bowl First
+### Try Before You Strip
 
-Before you remove anything, let's see what's in the carburettor bowl. At the bottom of the carburettor you'll find a drain screw or bolt. Place a rag or container underneath, and loosen it.
+1. **Tap the carburettor body** firmly with the handle of a screwdriver or a wrench. The float inside — a small buoyancy device that controls fuel flow, like the float in a toilet cistern — can get stuck. A tap often frees it.
 
-What comes out?
+2. **Drain the bowl.** At the bottom of the carburettor you'll find a drain screw or bolt. Place a rag or container underneath and loosen it. Let the fuel drain out completely — this flushes any sediment or water that's settled to the bottom. Tighten it back up and try starting again. If what comes out looks dirty, rusty, or watery, the fuel in the tank may be contaminated — consider draining and replacing it.
 
- - Clean fuel → There's fuel in the bowl, so it's getting that far. The jets are likely blocked. Keep reading to clean them.
- - Dirty fuel, grit, or water → Contaminated fuel has been flowing into the carb. Clean the carb as below, and when you're done, find and fix the source — check the tank for rust and sediment, and replace the fuel filter.
- - Nothing, or just a dribble → The bowl is empty. Either fuel isn't reaching the carb (go back to Check Fuel) or the float needle is stuck shut. Keep reading.
+3. **Spray carb cleaner into the intake** (where the air filter was) and into any accessible openings on the carb body. Sometimes this is enough to dissolve a light blockage in the jets without disassembly.
 
+4. **Check the fuel cap vent again.** Loosen the cap and try starting. A blocked vent creates a vacuum in the tank that slowly starves the carburettor — the engine might start but die as the bowl runs dry.
+
+**Try starting after each of these.** You'd be surprised how often a tap and a drain is all it takes.
+
+- It starts! → [[#Good Enough For The Burn]]
+- Still nothing → Keep reading.
+
+### Cleaning the Carburettor
+
+If you've exhausted the quick fixes above, the carburettor probably needs to come apart for a proper clean. This is absolutely doable, but if you haven't done it before, it's worth having a Greasemonkey with you.
+
+If you're doing it yourself, find the cleanest, most sheltered workspace you can. Lay down a clean cloth to work on — you'll be handling small brass jets that you do not want to drop in the dust. Take photos as you go — it makes reassembly much easier.
+
+1. **Remove the air filter** to expose the carburettor.
+2. **Disconnect the fuel line** from the carburettor. Have a rag ready — some fuel will spill.
+3. **Disconnect the throttle linkage and choke linkage.** These are thin metal rods or cables connecting the carburettor to the governor and choke lever. Note where they attach — take a photo.
+4. **Unbolt the carburettor** from the engine. It's usually held on by two bolts or nuts. There'll be a gasket between the carb and the engine — a thin flat seal. Try not to tear it, but don't panic if you do — the Greasemonkeys have gasket paper to make a new one.
+5. **Remove the bowl.** It's the cup-shaped part at the bottom, held on by a single bolt or screw up through the centre. Be careful — there's a rubber O-ring or gasket between the bowl and the body that you'll need to reuse.
+
+Now you can see inside:
+
+6. **Find and remove the main jet.** It's a small brass nozzle screwed into the centre post inside the bowl area. Unscrew it gently with a flat screwdriver.
+7. **Find and remove the idle jet.** This is smaller and usually screwed into the side of the carburettor body, near where it meets the engine. It can be easy to miss.
+8. **Clean every jet and passage.** Spray carb cleaner through each jet and hold it up to the light — you should see a clear, round hole. If it's blocked, poke through it gently with a fine wire (a single strand from a wire brush works well, or a thin guitar string). Don't use anything that could widen the hole — these are precision-sized.
+9. **Check the float.** Make sure it swings freely and the needle isn't stuck, bent, or dirty.
+10. **Spray carb cleaner through every hole and passage** in the carburettor body. There are more internal passages than you'd expect — spray into every opening you can find.
+11. **Clean the bowl.** Wipe out any sediment or residue.
+12. **Reassemble in reverse order.** Make sure the O-ring and gaskets are seated properly, the jets are snug (don't overtighten — brass strips easily), and all linkages are reconnected.
+
+### After Cleaning
+
+Refit the carburettor, reconnect the fuel line, and [[#Starting a generator|try starting the generator]].
+
+- It starts and runs! → Well done. If the carburettor was clogged with old fuel residue, consider draining and replacing the fuel in the tank too, or it'll clog up again. → [[#Good Enough For The Burn]]
+- It starts but runs rough, surges, or dies → The carb might need adjustment, or there's another issue. → Something's Wrong (runs poorly)
+- Still won't start → You've ruled out fuel delivery and the carburettor. Let's check if the engine has compression. → [[#Check compression]]
+
+## Check compression
+
+If you've got spark and fuel but the engine still won't start, the problem might be compression. Remember the four-stroke cycle: the piston moves up inside the cylinder and squeezes the fuel-air mixture into a small space before the spark plug ignites it. If the cylinder can't hold that pressure — because of a leak somewhere — the mixture won't compress enough to ignite, and the engine won't fire.
+
+Think of it like trying to inflate a balloon with a hole in it. No matter how hard you blow, the air just escapes.
+
+### The Thumb Test
+
+This is rough but surprisingly useful. You don't need any tools.
+
+1. Remove the spark plug.
+2. Place your thumb firmly over the spark plug hole.
+3. Pull the starter cord (or have someone press the electric start).
+
+You should feel strong, rhythmic puffs of air pushing against your thumb — that's the piston compressing air in the cylinder.
+
+- **Strong puffs that push your thumb off** → Compression is probably fine. If you've checked spark, fuel, and compression and it still won't start, [[#Greasemonkey assistance|it's time to seek Greasemonkey help]]. There may be a timing issue (a sheared flywheel key can throw the spark timing off) or something else unusual going on.
+- **Weak puffs, or barely anything** → Low compression. Keep reading.
+- **Nothing at all** → No compression. Keep reading.
+
+### Using a Compression Tester
+
+If the Greasemonkeys have a compression tester (ask — they usually do), you can get a more precise reading. Screw the tester into the spark plug hole, crank the engine a few times, and read the gauge.
+
+- **100–140 PSI** → Good compression. The problem is elsewhere.
+- **Around 60 PSI** → May be normal if the engine has a compression release mechanism (some do, to make pull-starting easier). Ask a Greasemonkey if you're not sure.
+- **Below 60 PSI** → Low compression. Something is leaking. Keep reading.
+
+### Low Compression — Where's the Leak?
+
+There are three main places compression can escape:
+
+1. **Piston rings** — these are metal rings around the piston that seal it against the cylinder wall. If they're worn, air blows past them.
+2. **Valves** — the intake and exhaust valves at the top of the cylinder open and close to let the fuel-air mix in and the exhaust out. If they're not seating properly, compression leaks past them.
+3. **Head gasket** — the seal between the cylinder head and the engine block. If it's blown, compression escapes between the two.
+
+**The oil test** can help narrow it down. Squirt a small amount of engine oil into the cylinder through the spark plug hole — about a teaspoon. The oil temporarily seals the gap between the piston rings and cylinder wall. Now redo the thumb test or compression test.
+
+- **Compression improved noticeably** → The piston rings are worn. The oil filled the gap temporarily. This is a major repair — the engine needs new rings or a rebore. → [[#Greasemonkey assistance]]
+- **No change** → The leak is probably at the valves or head gasket. → [[#Check valves]]
+
+### Check Valves
+
+Remove the valve cover — *it's the metal cover on the top or side of the cylinder head, usually held on by a few bolts. There'll be a gasket underneath it.* This exposes the valve train: the rocker arms, valve springs, and the tops of the valves.
+
+Now slowly rotate the engine by hand (pull the starter cord gently, or turn the flywheel) and watch the valves move.
+
+- **Both valves move up and down smoothly** → The valves are mechanically OK. The problem might be that they're not sealing properly — carbon buildup on the valve seats, or incorrect valve clearance. Try adjusting the clearance: with the engine at top dead centre (both valves closed), check the gap between each rocker arm and valve stem with a feeler gauge. Intake should be about 0.10–0.15mm, exhaust about 0.20mm. If you don't have a feeler gauge, a Greasemonkey will. → [[#Greasemonkey assistance]]
+- **One or both valves aren't moving** → Something is broken — a pushrod, a rocker arm, or a cam lobe. → [[#Greasemonkey assistance]]
+- **Movement looks sloppy or uneven** → The valve clearance is probably way off, or a component is worn. → [[#Greasemonkey assistance]]
+
+If you've got this far and nothing has worked, you're likely looking at a blown head gasket, a cracked cylinder head, or serious internal wear. These aren't field repairs — but a Greasemonkey can confirm the diagnosis and advise whether it's fixable at the burn or whether you need to find an alternative generator.
+
+→ [[#Greasemonkey assistance]]
 
 ## Good Enough For The Burn
 
