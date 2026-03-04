@@ -171,6 +171,24 @@ If you're comfortable with it, try bridging the starter solenoid terminals with 
 
 ## Engine won't turn
 
+You've tried pulling the cord or turning the engine by hand, and it won't budge — or it moves a tiny bit and hits a wall. Something inside is physically stopping the engine from rotating.
+
+**First, make sure the spark plug is out.** If you haven't already removed it, do that now. A cylinder full of fuel or oil can create hydraulic lock — the piston tries to compress liquid, which unlike air doesn't compress, and the engine jams solid. With the plug out, any trapped liquid can escape. You might get a squirt of fuel or oil out of the hole — that's fine, that's the problem leaving.
+
+Try turning the engine again with the plug out.
+
+- **It turns now!** → That was hydraulic lock. Crank it a few times with the plug out to clear any remaining liquid, dry and refit the spark plug, and [[#Starting a generator|try starting again]]. If it keeps happening, fuel is getting into the cylinder when it shouldn't be — a stuck carburettor float or a leaking needle valve is likely. → [[#Check carburettor]]
+- **Still won't turn** → Keep reading.
+
+**Try rocking it.** Sometimes a piston gets stuck at a tight point in the cycle. Try turning the flywheel back and forth gently — don't force it, but see if you can work it free. A little penetrating oil or even engine oil squirted into the spark plug hole can help if the piston is dry or slightly corroded.
+
+- **It freed up!** → Let it sit with some oil in the cylinder for a few minutes, then crank it slowly a few times with the plug out before refitting and trying to start. → [[#Starting a generator]]
+- **Completely locked solid** → Keep reading.
+
+**If the engine is truly seized** — the piston is welded to the cylinder wall by heat or lack of oil, or there's major internal damage — this is not a field repair. Common causes are running without oil, severe overheating, or a broken connecting rod jamming against the crankcase.
+
+There's nothing more you can do here without major disassembly. → [[#Greasemonkey assistance]]
+
 ## Greasemonkey assistance
 
 ## Check fuel
@@ -365,6 +383,192 @@ Now slowly rotate the engine by hand (pull the starter cord gently, or turn the 
 If you've got this far and nothing has worked, you're likely looking at a blown head gasket, a cracked cylinder head, or serious internal wear. These aren't field repairs — but a Greasemonkey can confirm the diagnosis and advise whether it's fixable at the burn or whether you need to find an alternative generator.
 
 → [[#Greasemonkey assistance]]
+
+## Starts but runs poorly {#runs-poorly}
+
+Your generator starts — that's the hard part done. But something's not right. Maybe it's hunting up and down, maybe it dies when you open the choke, maybe it's belching smoke or making an alarming noise.
+
+An engine that runs but runs badly is almost always a fuel mixture problem — too much fuel, not enough fuel, or air getting in where it shouldn't. Less commonly it's ignition, overheating, or mechanical wear. The symptom tells us where to look.
+
+What's it doing?
+
+- Engine speed surges up and down → [[#Surging]]
+- Dies when you open the choke (even when warm) → [[#Dies when choke opens]]
+- Stalls after running for a while → [[#Stalls after running]]
+- Hard to restart when hot → [[#Hard to restart when hot]]
+- Smoke from the exhaust → [[#Smoke]]
+- Unusual noises or vibration → [[#Noises]]
+- Exhaust coming out of the air intake / carburettor → [[#Exhaust from intake]]
+- Engine runs fine but no electricity at the outlets → [[#No power at outlets]]
+
+## Surging
+
+The engine speeds up, slows down, speeds up, slows down — a rhythmic hunting that won't settle. This is the single most common generator complaint, and it's almost always the same thing: the engine is running **lean** — not enough fuel relative to the amount of air.
+
+**Does partially closing the choke stabilise it?** Move the choke lever partly towards "closed" while the engine is running.
+
+- **Yes, it smooths out** → Confirmed lean. The choke is restricting airflow, which temporarily fixes the ratio. The problem is that the engine can't get enough fuel on its own. Most likely causes, in order:
+
+  1. **Dirty idle jet.** This is the most common cause by far. The idle jet is a tiny brass nozzle inside the carburettor that feeds fuel at low speed and idle. A speck of dust or a film of dried old fuel is enough to block it. → [[#Check carburettor]]
+
+  2. **Vacuum leak.** If air is sneaking into the engine *after* the carburettor — through a cracked gasket, a loose carb mounting, or a perished intake hose — the engine gets extra air that the carburettor didn't account for, leaning out the mixture. **To test:** spray carb cleaner around the base of the carburettor and the intake gasket while the engine is running. If the engine note changes — speeds up, smooths out, or stumbles — you've found the leak. Tighten the carburettor mounting bolts, and check the gasket between the carb and the engine. If it's torn or compressed flat, it needs replacing — the Greasemonkeys have gasket paper.
+
+  3. **Old fuel.** Petrol older than about 30 days starts to deteriorate — it loses volatility and leaves varnish deposits. Drain the old fuel and try fresh.
+
+  4. **Blocked fuel cap vent.** Try loosening the fuel cap while the engine runs. If the surging stops, the cap vent is blocked — the tank can't breathe, so fuel delivery becomes inconsistent. Clean or replace the cap.
+
+- **No, choke doesn't help** → The problem is probably the governor rather than fuel mixture. The governor keeps engine speed steady by adjusting the throttle (see [[#Fires then dies]] for how it works). Check that the governor linkage moves freely, all springs are attached and haven't stretched, and nothing has vibrated loose. Try tightening the governor tension screw slightly — this dampens the oscillation. If that doesn't help, → [[#Greasemonkey assistance]]
+
+## Dies when choke opens
+
+The engine starts and runs with the choke closed, but the moment you open it — even after warming up for several minutes — it stumbles and dies. This is a classic lean condition, closely related to [[#Surging]].
+
+With the choke closed, the engine gets an artificially rich mixture. When you open the choke, normal airflow resumes and the engine can't get enough fuel to match. Something is restricting fuel delivery at normal running.
+
+The causes and fixes are the same as surging — work through them in this order:
+
+1. **Vacuum leak test** — spray carb cleaner around the carb base and intake gasket while running with the choke partly open. Engine note changes? That's your leak.
+2. **Check fuel flow** — is fuel reaching the carburettor freely? → [[#Check fuel]]
+3. **Clean the carburettor** — especially the idle jet and main jet. → [[#Check carburettor]]
+4. **Check carb mounting** — loose bolts, cracked spacer, warped flange.
+
+## Stalls after running
+
+The generator runs fine for minutes or even hours, then suddenly dies. It might restart immediately, or it might refuse to start until it's cooled down.
+
+**Open the fuel cap and listen.** Do you hear a hiss or rush of air?
+
+- **Yes** → The fuel cap vent is blocked. A vacuum has been building in the tank, gradually starving the carburettor. The engine ran on what was in the bowl until it ran dry. Run with the cap loose to confirm, then clean or replace the cap. → [[#Good Enough For The Burn]]
+
+- **No hiss** → Keep going:
+
+1. **Check the oil level.** Low oil or a faulty oil sensor will cut the engine after it's been running. Top up the oil. If the oil level is fine, try disconnecting the oil sensor wire — if the engine keeps running, the sensor is faulty. Leave it disconnected but check your oil manually.
+
+2. **Is it overheating?** Feel the engine (carefully). Is it unusually hot? Are the cooling fins clogged with dust? Is the generator in direct sun with no airflow? Clean the fins, provide shade, reduce the load, and make sure air can flow around the engine.
+
+3. **Vapour lock.** If the fuel line runs near the engine or exhaust, heat can boil the fuel in the line after prolonged running. The engine starts on a full carburettor bowl but eventually starves. Feel along the fuel line for hot spots and reroute away from heat sources.
+
+4. **Failing ignition coil.** Some coils work fine when cold but lose their ability to produce spark as they heat up. The engine runs until the coil reaches a critical temperature, then dies. It starts again after cooling. This is hard to diagnose without a spare coil — → [[#Greasemonkey assistance]]
+
+5. **Fuel supply can't keep up.** The carburettor bowl may be draining faster than the fuel system can refill it — a partially blocked filter, a slow-flowing tap, or sediment in the tank. → [[#Check fuel]]
+
+## Hard to restart when hot
+
+The generator runs fine, you turn it off, and then it won't start again until it's cooled down. This is frustrating but tells us something useful — the problem is heat-related.
+
+Common causes:
+
+1. **Tight valve clearance.** Metal expands when hot. If the valve clearance is set too tight (or has tightened over time), the valves may not fully close when the engine is hot, which kills compression. The engine starts fine cold because the clearance is adequate, but once hot, the valves hold open a crack. Check and adjust valve clearance — intake: 0.10–0.15mm, exhaust: ~0.20mm. → [[#Check valves]]
+
+2. **Failing ignition coil.** The coil's insulation can break down when hot, leaking voltage instead of sending it to the spark plug. Test for spark when the engine is hot and refusing to start — if there's no spark but spark returns once it cools, the coil is the problem. → [[#Greasemonkey assistance]]
+
+3. **Vapour lock.** Heat from the engine boils fuel in the line or carburettor, creating air pockets. Let it cool, check for fuel line routing near hot surfaces, and insulate or reroute the line.
+
+4. **Carburettor heat soak.** After shutdown, heat from the engine soaks into the carburettor and evaporates the fuel in the bowl. When you try to restart, there's no fuel ready. Wait a few minutes, or try the [[#Bypass fuel test]] with fresh fuel.
+
+## Smoke
+
+The engine is running but producing noticeable smoke from the exhaust. The colour tells you what's burning.
+
+**What colour is the smoke?**
+
+- **Black smoke** → The engine is running **rich** — too much fuel, not enough air. The most common cause is a dirty or blocked air filter. Remove the air filter and check — if it's caked in dust (very likely at the burn), clean it. Foam filters can be washed in soapy water, dried, and lightly re-oiled before refitting. Paper filters can be tapped clean. If the engine runs better with the filter removed entirely, you definitely need to clean or replace it. Also check that the choke is fully open — a stuck choke keeps the mixture rich. If the air filter is clean and the choke is open, the carburettor may need adjustment — the mixture screw can be turned slightly leaner (clockwise, small adjustments). → [[#Good Enough For The Burn]]
+
+- **Blue smoke** → The engine is **burning oil**. First check the oil level — is it overfilled? Too much oil can be pushed past the piston rings into the combustion chamber. Drain to the correct level (between the marks on the dipstick, with the generator on level ground). If the oil level is normal and it's still smoking blue, the piston rings or valve guides are likely worn — oil is seeping into the combustion chamber. This isn't a quick fix. → [[#Greasemonkey assistance]]
+
+- **White smoke** → This is usually **condensation** on a cold start and is completely normal — it should clear within a minute or two. If white smoke persists after the engine is warm, check for water in the fuel (drain some from the carburettor bowl and look for separation or cloudiness). Also check the engine oil — if it looks milky or frothy, water is getting into the oil, possibly through a blown head gasket. → [[#Greasemonkey assistance]]
+
+## Noises
+
+The engine is running but making a sound that wasn't there before, or doesn't sound right. The type of noise points to the cause.
+
+**What kind of noise?**
+
+- **Knocking — a deep, rhythmic thudding from inside the engine.** Stop the engine immediately. A knocking sound usually means something serious: a worn connecting rod bearing, a loose flywheel, or rod knock. Continuing to run risks catastrophic damage — a connecting rod can punch through the engine block. This is not a field repair. → [[#Greasemonkey assistance]]
+
+- **Rattling — a loose, metallic vibration.** This is usually something external that's come loose. Check and tighten: muffler bolts, engine mounting bolts, external covers and shields, and the frame bolts. Generators vibrate constantly and hardware works itself loose over time. A few minutes with a wrench usually sorts it. → [[#Good Enough For The Burn]]
+
+- **Tapping or clicking — a fast, rhythmic tick from the top of the engine.** This is usually the valves. The valve clearance may have opened up (or was never set correctly), so the rocker arms are slapping against the valve stems instead of pressing smoothly. It won't stop the engine immediately but it'll get worse and can eventually damage the valve train. → [[#Check valves]]
+
+## Exhaust from intake
+
+If you can see or feel exhaust gases coming out of the carburettor or air intake — instead of out of the exhaust pipe — something is wrong with the exhaust valve. When the exhaust valve should be closed, it's staying open (or partly open), and combustion gases are blowing back the wrong way through the cylinder.
+
+This could be:
+
+- A stuck exhaust valve
+- A broken or weak valve spring
+- A worn camshaft lobe that's no longer lifting the valve properly
+- Incorrect valve clearance
+
+→ [[#Check valves]]
+
+## No power at outlets
+
+The engine is running smoothly but nothing happens when you plug something in. The engine side is fine — the problem is in the electrical output side of the generator.
+
+**Check the breakers and reset buttons on the control panel.** Most generators have one or more circuit breakers or GFCI (earth leakage) reset buttons. If they've tripped, push them back in or flip them on.
+
+- **That fixed it!** → The breaker tripped because of an overload or a fault in something you had plugged in. Reduce the load — disconnect non-essential devices and reconnect them one at a time to find the culprit. Damaged extension cords, water-damaged power strips, and faulty appliances are common causes, especially outdoors. → [[#Good Enough For The Burn]]
+- **Breakers keep tripping** → Disconnect everything, reset the breaker, then reconnect devices one at a time. If the breaker trips with a specific device, that device has a fault. If it trips with nothing connected, the generator's internal wiring may have an issue. Check outlets for moisture or dust — compressed air or letting them dry out can help. → [[#Greasemonkey assistance]]
+- **Breakers aren't tripped but still no power** → Keep reading.
+
+**Test the outlets.** If you have a multimeter, check for voltage at the outlet. If you have a test lamp or any appliance you know works, try that.
+
+- **No voltage at all** → The alternator or its control circuit isn't producing power. Possible causes:
+  - **Loss of residual magnetism** — after long storage, the alternator can lose its residual magnetic field and can't start generating. This can sometimes be fixed by "field flashing" — a Greasemonkey can show you the drill trick if you're curious.
+  - **Failed AVR** (Automatic Voltage Regulator) — *a small electronic module, usually inside the generator's cover panel, that regulates output voltage.*
+  - **Worn carbon brushes** — these are small carbon blocks that press against the alternator's rotating parts to transfer current. They wear down over time.
+  - **Broken wire** or blown internal fuse.
+  - These are all best handled by a Greasemonkey. → [[#Greasemonkey assistance]]
+
+- **Voltage is present but low or fluctuating** → Is the engine speed steady? If the engine is surging, the electrical output will fluctuate with it — fix the engine issue first. → [[#Surging]]. If engine speed is steady but voltage isn't, the AVR may be failing, or the generator is overloaded. Check the load with a current meter (the Greasemonkeys should have one) and reduce if necessary. → [[#Greasemonkey assistance]]
+
+- **Voltage looks correct but appliances don't work** → Check the frequency with a multimeter if possible. Some sensitive electronics — laptops, audio equipment, certain chargers — need clean, stable power. Standard generators produce a "modified sine wave" that some devices don't tolerate well. For audio equipment specifically, check that you have a proper ground rod connected. If your appliances work on a different generator or mains power, your generator's output quality may simply not be compatible. → [[#Greasemonkey assistance]]
+
+## It overheated {#overheated}
+
+The engine got very hot and shut itself down — or you noticed it was overheating and switched it off. Either way, don't try to restart it straight away. Give it at least 15–20 minutes to cool down. Trying to restart a severely overheated engine can make the damage worse.
+
+While you're waiting, let's figure out why it overheated and whether there's any damage.
+
+### Why did it overheat?
+
+Most small generators are air-cooled — the engine has metal fins cast into the cylinder and head that radiate heat, and a fan on the flywheel blows air over them. Anything that disrupts this system can cause overheating.
+
+**Check these while the engine cools:**
+
+1. **Cooling fins clogged with dust?** At the burn this is extremely common. Playa dust packs into the fins and acts like insulation, trapping heat instead of releasing it. Brush or blow them clean — get into all the gaps.
+
+2. **Airflow blocked?** Is the generator jammed against a wall, inside a box, or surrounded by stuff? It needs space on all sides for air to flow through. Is the fan shroud (the plastic cover over the flywheel area) cracked, missing, or clogged? Without it, the fan can't direct air over the fins properly.
+
+3. **Running in direct sun?** Desert sun is brutal. Shade the generator — but make sure the shade structure doesn't block airflow around it.
+
+4. **Overloaded?** Was the generator running a heavy load — lots of appliances, or something with a big startup draw like a fridge or compressor? An overloaded engine works harder and produces more heat. Generators in hot environments should be run well under their rated capacity.
+
+5. **Oil level low?** Oil doesn't just lubricate — it also carries heat away from internal components. Low oil means more friction and less cooling. Check the level and top up if needed.
+
+### Has it been damaged?
+
+Once the engine has cooled, let's see if it still works.
+
+**Can the engine turn?** Try pulling the cord or turning the flywheel by hand.
+
+- **No, it's stuck** → The heat may have caused the piston to seize in the cylinder. → [[#Engine won't turn]]
+- **Yes, it turns** → Good sign. Keep going.
+
+**Check compression.** Do the thumb test — remove the spark plug, thumb over the hole, pull the cord.
+
+- **Strong compression** → The internals are probably OK. Clean the cooling fins, fix whatever caused the overheating, check the oil, and [[#Starting a generator|try starting again]]. If it runs, keep a close eye on it — reduce the load and monitor the temperature. → [[#Good Enough For The Burn]]
+- **Weak or no compression** → The heat likely damaged something in the top end — a blown head gasket is the most common result of overheating, followed by a warped cylinder head. These stop the cylinder from sealing, which kills compression. → [[#Greasemonkey assistance]]
+
+### Preventing it next time
+
+- Clean the cooling fins regularly — daily at the burn is not overkill
+- Keep the generator elevated off the ground on a platform or pallet, out of the worst dust
+- Provide shade without blocking airflow
+- Don't overload — in hot conditions, aim for 75% of rated capacity or less
+- Check oil every day
 
 ## Good Enough For The Burn
 
