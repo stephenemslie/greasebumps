@@ -14,6 +14,8 @@ But first — before you touch a single bolt — do these quick checks. This is 
 
 ![](images/honda/honda_open_overview.png)
 
+![](images/honda/open_overview_back.png)
+
 ## Pre-flight checks
 
  - Are you correctly starting your generator? - [[#Starting a generator]]
