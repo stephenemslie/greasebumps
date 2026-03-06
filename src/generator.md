@@ -2,7 +2,7 @@
 
 # Watt's The Problem?
 
-## Start here {#start}
+## Start here
 
 Generator given up the ghost? Ware-and-tear-wolves getting you down? Don't get spooked — most generator problems come down to four things, and you can check all of them with your hands, eyes, tentacles, and a few simple tools.
 
@@ -18,8 +18,8 @@ But first — before you touch a single bolt — do these quick checks. This is 
 
  - Are you correctly starting your generator? - [[#Starting a generator]]
  - **Fuel in the tank?** Is it the right kind — normal petrol, not 2-stroke mix or diesel?
- - **Oil level OK?** Most generators have a low-oil cutoff. If it won't start, this alone might be why.
- - **Fuel tap open?** Vertical is usually open, horizontal is closed — but just try both to be sure.
+ - **Oil level OK?** Check the dipstick — *it's usually a twist-off cap or pull-out stick on the side of the engine block, often yellow*. Most generators have a low-oil cutoff. If it won't start, this alone might be why.
+ - **Fuel tap open?** *The fuel tap is a small lever or knob where the fuel line connects to the bottom of the tank.* Vertical is usually open, horizontal is closed — but just try both to be sure.
  - **Engine switch on?** Make sure the key or switch is in the "on" position.
  - **Any loose wires?** Especially the oil sensor and voltage sensor connectors. If they're disconnected, nothing will work.
 
@@ -28,13 +28,13 @@ But first — before you touch a single bolt — do these quick checks. This is 
 All good? Now - what's your generator doing?
 
  - [[#Doesn't start at all]]
- - Starts but runs poorly
- - Engine runs but there's no electricity
- - It overheated and stopped
+ - [[#Starts but runs poorly]]
+ - [[#No power at outlets|Engine runs but there's no electricity]]
+ - [[#It overheated]]
 
 ## Doesn't start at all
 
-[[#Starting a generator]]
+If you're not sure you're starting it correctly, check [[#Starting a generator]] first.
 
 So you've gone through the steps — fuel on, choke closed, switch on, pull the cord or turn the key — and... nothing. Let's narrow it down.
 
@@ -49,16 +49,18 @@ If you're on a pull-start generator and you're not sure whether the engine is "t
 
 ## Starting a generator
 
+![](images/honda/starter_grip.png)
+
   1. Check oil and fuel. Make sure there's enough of both. Running without oil will destroy the engine.
   2. Position it safely. Outdoors, on a flat stable surface, well away from tents and enclosed spaces. Generator exhaust is deadly.
   3. Disconnect any appliances. Don't start it under load.
   4. Open the fuel tap. This lets fuel flow to the carburettor.
-  5. Close the choke. A cold engine needs a richer fuel mixture to start. The choke restricts airflow to make that happen. ![](images/honda/choke_close.png)
+  5. Close the choke — *a lever on the side of the carburettor or on the control panel, usually marked "choke" or with a symbol*. A cold engine needs a richer fuel mixture to start. The choke restricts airflow to make that happen.
   6. Turn the engine switch to "on."
   7. Start the engine.
     - Electric start: Press the start button or turn the key.
-    - Pull start: Pull the cord gently until you feel resistance — stop — then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again. ![](images/honda/pull.png)
-  8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. ![](images/honda/choke_open.png)
+    - Pull start: Pull the cord gently until you feel resistance — stop — then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again. 
+  8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. 
   9. Let it warm up. Give it a minute or two before plugging anything in.
 
 
@@ -87,19 +89,18 @@ Try a jump start — connect a known good battery or jump from a vehicle battery
  - Yes, it cranks but won't catch → The engine can turn — that's good. Something else is stopping it from firing. → [[#Cranks but won't catch]]
  - Still just clicking → Probably not the battery. Keep reading.
 
-  Listen to the click. When you press the start button, you should hear a solid "clunk" from the starter solenoid — *a small box, usually near the battery or on the*
-  *starter motor, that acts as a heavy-duty switch connecting the battery to the starter motor*.
+**Listen to the click.** The starter solenoid — *a small box near the battery or starter motor* — should make a solid "clunk" when you press start.
 
- - No click at all → The solenoid isn't getting the signal to close. Check the wiring from the start button to the solenoid, and check for blown fuses on that circuit. → Check the Starting Circuit
- - Single loud click but nothing else → The solenoid is working, but the starter motor isn't spinning. *The starter motor is a small cylindrical motor — about the size of a drink can — bolted to the side of the engine block, usually near the bottom, with thick wires running to it*. Give it a firm tap with a wrench while someone presses the start button — sometimes the internal brushes get stuck and a knock frees them. If that doesn't work, → [[#Greasemonkey assistance]]
-  - Rapid clicking (like a machine gun) → Classic sign of a battery that's almost dead — it has enough power to close the solenoid, but the moment the starter tries to draw current, the voltage drops and the solenoid releases, over and over. Try a jump start again, making sure the connections are clean and tight.
+ - **No click at all** → The solenoid isn't getting the signal. Check wiring from the start button to the solenoid, and check for blown fuses. → [[#Check the starting circuit]]
+ - **Single loud click, nothing else** → The solenoid works but the starter motor isn't spinning. The starter motor is *a small cylindrical motor — about the size of a drink can — bolted to the side of the engine block near the bottom, with thick wires running to it*. Give it a firm tap with a wrench while someone presses start — this can free stuck internal brushes. If that doesn't work → [[#Greasemonkey assistance]]
+ - **Rapid clicking** (like a machine gun) → The battery is almost dead — enough power to click the solenoid, but not enough to turn the starter. Try a jump start again with clean, tight connections.
 
-  If you've got it cranking but it won't start, head to → [[#Cranks but won't catch]].
+If you've got it cranking but it won't start → [[#Cranks but won't catch]].
 
-  If you can't get it to crank at all, let's check if the engine itself can turn. Remove the spark plug *(the porcelain-topped thing screwed into the top of the engine — you'll need a spark plug wrench or a deep socket)*. Now try pulling the pull cord, or turn the flywheel by hand — *that's the heavy metal disc behind the plastic cover on the side of the engine, where the pull cord is*.
+**If you can't get it to crank at all,** let's check whether the engine itself can turn. Remove the spark plug and try pulling the cord, or turn the flywheel by hand.
 
- - The engine turns freely → The engine isn't stuck. The starter motor or its wiring is the problem. → [[#Greasemonkey assistance]]
- - The engine won't turn at all → Something is jammed inside. → [[#Engine won't turn]]
+ - **It turns freely** → The engine is fine. The starter motor or its wiring is the problem. → [[#Greasemonkey assistance]]
+ - **It won't turn** → Something is jammed inside. → [[#Engine won't turn]]
 
 ## Cranks but won't catch
 
@@ -107,7 +108,7 @@ The engine is turning over — you can hear it churning on the electric start, o
 
 This is actually good news. Your engine can move, which rules out a lot of mechanical problems. Something is missing from the recipe: either there's no spark to ignite the fuel, or no fuel is reaching the cylinder, or (less commonly) the cylinder isn't holding compression.
 
-There's a quick test that can save you a lot of time. If you have a can of carburettor cleaner or starter fluid, spray a short burst into the air intake — *that's the opening where the air filter sits, leading into the carburettor*.
+There's a quick test that can save you a lot of time. If you have a can of carburettor cleaner or starter fluid, spray a short burst into the air intake — *the air filter is a plastic or metal housing on the side of the engine, covering the carburettor intake. Remove or open it to access the intake opening*.
 
 Now try to start it. Did it fire, even for a second?
 
@@ -144,11 +145,11 @@ Let's work through the most likely causes, quickest fixes first.
 
 **Still fires and dies?** A few less common causes:
 
-- **Governor linkage.** The governor is what keeps the engine running at a steady speed. Without it, the engine would speed up when you unplug an appliance and slow down when you plug one in. It works by connecting the engine's spinning internals to the carburettor's throttle through a set of springs and levers on the outside of the engine. When the engine speeds up, the governor pulls the throttle closed a bit; when it slows down, the governor opens it up. It's a constant balancing act. The problem is that these springs and levers are exposed, and generators vibrate a lot. Over time — sometimes just over the course of a burn — the linkage can "walk": vibration gradually loosens an adjustment screw, stretches a spring, or shifts a lever, until the governor is so far out of calibration that it can't keep the engine in its sweet spot. The engine starves for air or fuel and stalls. Check that all the linkage moves freely, springs are attached and haven't stretched, and nothing has worked itself loose. If an adjustment screw has vibrated out of position, you may be able to see that it's no longer seated where it should be. A Greasemonkey can help recalibrate it if needed.
+- **Governor linkage.** The [[#Check governor|governor]] keeps the engine running at a steady speed. If it's out of adjustment — which happens easily from vibration — the engine can stall. Check that the linkage moves freely, springs are attached, and nothing has worked loose.
 - **Blocked exhaust.** A wasp nest, mud, or a crushed muffler can restrict exhaust flow enough to stall the engine. Check that air can flow out of the exhaust pipe.
 - **Sheared flywheel key.** If the engine has had a hard knock, the small metal key that locks the flywheel to the crankshaft can shear, throwing the ignition timing off. The engine might fire but can't sustain. This one is hard to diagnose in the field. → [[#Greasemonkey assistance]]
 
-If none of the above has helped, the problem may overlap with running issues — the engine is technically starting but can't sustain idle. → Something's Wrong (runs poorly)
+If none of the above has helped, the problem may overlap with running issues — the engine is technically starting but can't sustain idle. → [[#Starts but runs poorly]]
 
 ## Check the starting circuit
 
@@ -167,7 +168,7 @@ Still nothing?
 If you're comfortable with it, try bridging the starter solenoid terminals with a heavy jumper wire or screwdriver. This bypasses the switch and control circuit and sends power directly to the starter.
 
  - The engine cranks! → The solenoid or control circuit is at fault, but the engine and starter motor are fine. You can keep starting it this way in a pinch, or seek Greasemonkey assistance for a proper fix. [[#Greasemonkey assistance]]
- - Still nothing → The starter motor itself may be dead, or the battery is too flat to turn it. Try a jump start from a car battery or another charged battery, and if that doesn't work, seek Greasemonkey assistance.
+ - Still nothing → The starter motor itself may be dead, or the battery is too flat to turn it. Try a jump start from a car battery or another charged battery, and if that doesn't work. → [[#Greasemonkey assistance]]
 
 ## Engine won't turn
 
@@ -244,37 +245,38 @@ Let's pull the spark plug and have a look at it.
 
 What does the tip look like?
 
-- Wet with fuel → The engine is flooding — too much fuel is getting in but not igniting. Dry the plug off, check that the choke isn't stuck closed, and refit it. → Try starting again
+- Wet with fuel → The engine is flooding — too much fuel is getting in but not igniting. Dry the plug off, check that the choke isn't stuck closed, and refit it. → [[#Starting a generator|Try starting again]]
 - Black and sooty, or caked in carbon → The plug is fouled. This happens when the engine runs "rich" — too much fuel, not enough air — and unburned fuel leaves carbon deposits on the plug. The carbon creates a shortcut for the spark, so instead of jumping cleanly across the gap, the electricity leaks through the soot and
   the plug can't ignite anything. Clean the tip with a wire brush or rag, or replace the plug if you have a spare. If you have carb cleaner, spray a burst into the
   air intake and try starting — it ignites more easily than petrol and burns hot enough to help clear carbon from the plug and combustion chamber. Once it starts, let it run for a few minutes to burn off the rest. If the plug keeps fouling, the engine is still running rich — check that the choke is fully open once warm, the air filter is clean, and the carburettor isn't flooding.
 - Dry and clean-ish → No fuel is reaching the cylinder. The plug isn't the problem. → [[#Check fuel]]
-- Looks OK, not sure what's wrong → Keep reading — let's test whether it's actually sparking.
+- Looks OK, not sure what's wrong → Let's test whether it's actually producing a spark. → [[#Test for spark]]
 
-Test for spark. Push the rubber boot back onto the spark plug, but don't screw the plug back into the engine. Instead, hold the plug so its metal body is touching
-the engine block — this grounds it, giving the spark a path to follow. Keep your fingers on the rubber boot, away from the metal.
+## Test for spark
+
+Push the rubber boot back onto the spark plug, but don't screw the plug back into the engine. Instead, hold the plug so its metal body is touching the engine block — this grounds it, giving the spark a path to follow. **Keep your fingers on the rubber boot, well away from the metal — the ignition system produces a high-voltage jolt that won't kill you but will give you a sharp, unpleasant shock.**
 
 Now crank the engine (pull the cord or press start) and watch the spark plug tip.
 
 Do you see a spark? It should be a crisp blue flash between the electrodes.
 
-- Yes, strong blue spark → The ignition system is working. Your problem is likely fuel or compression. → [[#Check fuel]]
-- Weak, orange, or intermittent spark → The ignition system is struggling. Keep reading.
-- No spark at all → Keep reading.
+- **Yes, strong blue spark** → The ignition system is working. Your problem is likely fuel or compression. → [[#Check fuel]]
+- **Weak, orange, or intermittent spark** → The ignition system is struggling. Keep reading.
+- **No spark at all** → Keep reading.
 
-No spark or weak spark — let's work through the most common causes:
+**No spark or weak spark** — let's work through the most common causes:
 
-1. Check the oil level. Seriously — most generators have a low-oil safety cutoff, and it kills the spark. This is the number one "no spark" cause that isn't actually a spark problem. Top up the oil and try again.
-2. Check the kill switch wire. The ignition coil — *a small black box mounted near the flywheel* — has a thin wire running to the kill switch. When this wire is grounded, it kills the spark on purpose. If it's shorted, frayed, or touching the frame, the engine thinks it's been switched off. Try disconnecting this wire from the coil and testing for spark again. (You'll need to reconnect it to stop the engine — or just pull the plug boot off.)
-3. Check the spark plug gap. The gap between the two electrodes at the tip of the plug should be about 0.6–0.7mm — roughly the thickness of a paperclip wire. Too wide and the spark can't jump; too narrow and it's too weak. Bend the outer electrode gently to adjust.
-4. Try a known-good spark plug. Even if the plug looks fine, swapping it is quick and rules it out completely. Ask the Greasemonkeys — they usually have spares.
-5. Check the coil gap. The ignition coil needs to sit close to the flywheel — about 0.25mm, roughly the thickness of a business card or piece of cardboard. If it's been knocked out of alignment, it won't generate enough charge. Loosen the coil mounting screws, slide a piece of cardboard between the coil and flywheel as a spacer, push the coil snug against it, tighten the screws, then pull the cardboard out.
-6. Inspect the plug boot and HT lead. Look for cracks, burn marks, or a loose connection. A damaged lead can leak the spark to the engine block before it reaches the plug.
+1. **Check the oil level.** Seriously — most generators have a low-oil safety cutoff, and it kills the spark. This is the number one "no spark" cause that isn't actually a spark problem. Top up the oil and try again.
+2. **Check the kill switch wire.** The ignition coil — *a small black box mounted near the flywheel* — has a thin wire running to the kill switch. When this wire is grounded, it kills the spark on purpose. If it's shorted, frayed, or touching the frame, the engine thinks it's been switched off. Try disconnecting this wire from the coil and testing for spark again. (You'll need to reconnect it to stop the engine — or just pull the plug boot off.)
+3. **Check the spark plug gap.** The gap between the two electrodes at the tip of the plug should be about 0.6–0.7mm — roughly the thickness of a paperclip wire. Too wide and the spark can't jump; too narrow and it's too weak. Bend the outer electrode gently to adjust.
+4. **Try a known-good spark plug.** Even if the plug looks fine, swapping it is quick and rules it out completely. Ask the Greasemonkeys — they usually have spares.
+5. **Check the coil gap.** The ignition coil needs to sit close to the flywheel — about 0.25mm, roughly the thickness of a business card or piece of cardboard. If it's been knocked out of alignment, it won't generate enough charge. Loosen the coil mounting screws, slide a piece of cardboard between the coil and flywheel as a spacer, push the coil snug against it, tighten the screws, then pull the cardboard out.
+6. **Inspect the plug boot and HT lead.** Look for cracks, burn marks, or a loose connection. A damaged lead can leak the spark to the engine block before it reaches the plug.
 
-Got spark now?
+**Got spark now?**
 
-- Yes! → Great. Refit the plug and try starting again. If it still won't catch, → [[#Check fuel]]
-- Still no spark → The ignition coil itself may be faulty, or there's a wiring problem deeper in the system. → Seek Greasemonkey Assistance
+- **Yes!** → Great. Refit the plug and try starting again. If it still won't catch, → [[#Check fuel]]
+- **Still no spark** → The ignition coil itself may be faulty, or there's a wiring problem deeper in the system. → [[#Greasemonkey assistance]]
 
 ## Check carburettor
 
@@ -326,7 +328,7 @@ Now you can see inside:
 Refit the carburettor, reconnect the fuel line, and [[#Starting a generator|try starting the generator]].
 
 - It starts and runs! → Well done. If the carburettor was clogged with old fuel residue, consider draining and replacing the fuel in the tank too, or it'll clog up again. → [[#Good Enough For The Burn]]
-- It starts but runs rough, surges, or dies → The carb might need adjustment, or there's another issue. → Something's Wrong (runs poorly)
+- It starts but runs rough, surges, or dies → The carb might need adjustment, or there's another issue. → [[#Starts but runs poorly]]
 - Still won't start → You've ruled out fuel delivery and the carburettor. Let's check if the engine has compression. → [[#Check compression]]
 
 ## Check compression
@@ -370,9 +372,17 @@ There are three main places compression can escape:
 - **Compression improved noticeably** → The piston rings are worn. The oil filled the gap temporarily. This is a major repair — the engine needs new rings or a rebore. → [[#Greasemonkey assistance]]
 - **No change** → The leak is probably at the valves or head gasket. → [[#Check valves]]
 
-### Check Valves
+If the oil test didn't help either, you're likely looking at a blown head gasket, a cracked cylinder head, or serious internal wear. These aren't field repairs — but a Greasemonkey can confirm the diagnosis and advise whether it's fixable at the burn or whether you need to find an alternative generator.
 
-Remove the valve cover — *it's the metal cover on the top or side of the cylinder head, usually held on by a few bolts. There'll be a gasket underneath it.* This exposes the valve train: the rocker arms, valve springs, and the tops of the valves.
+→ [[#Greasemonkey assistance]]
+
+## Check valves
+
+The valves control the flow of air and fuel into the cylinder, and exhaust gases out of it. There are two: the **intake valve** (lets the fuel-air mix in) and the **exhaust valve** (lets the burnt gases out). They open and close in precise timing with the piston. If they're not seating properly, not moving at all, or out of adjustment, the engine will lose compression, run poorly, or refuse to start.
+
+The valves are inside the cylinder head, but you can see the top of the valve train by removing the **valve cover** — *the metal cover on the top or side of the cylinder head, usually held on by a few bolts. There'll be a gasket underneath it.*
+
+With the cover off, you'll see the **rocker arms** — small levers that pivot to push the valves open — and the **valve springs** that pull them closed again.
 
 Now slowly rotate the engine by hand (pull the starter cord gently, or turn the flywheel) and watch the valves move.
 
@@ -380,11 +390,25 @@ Now slowly rotate the engine by hand (pull the starter cord gently, or turn the 
 - **One or both valves aren't moving** → Something is broken — a pushrod, a rocker arm, or a cam lobe. → [[#Greasemonkey assistance]]
 - **Movement looks sloppy or uneven** → The valve clearance is probably way off, or a component is worn. → [[#Greasemonkey assistance]]
 
-If you've got this far and nothing has worked, you're likely looking at a blown head gasket, a cracked cylinder head, or serious internal wear. These aren't field repairs — but a Greasemonkey can confirm the diagnosis and advise whether it's fixable at the burn or whether you need to find an alternative generator.
+## Check governor
 
-→ [[#Greasemonkey assistance]]
+The governor is what keeps the engine running at a steady speed. Without it, the engine would speed up when you unplug an appliance and slow down when you plug one in.
 
-## Starts but runs poorly {#runs-poorly}
+It works through a set of springs and levers on the outside of the engine — *look for a small metal arm and one or two springs connecting to the carburettor's throttle linkage*. When the engine speeds up, the governor pulls the throttle closed a bit; when it slows down, it opens it up. It's a constant balancing act between the spring tension (which wants the throttle open) and the engine's spinning force (which wants it closed).
+
+The problem is that these springs and levers are exposed, and generators vibrate a lot. Over time — sometimes just over the course of a burn — the linkage can "walk": vibration gradually loosens an adjustment screw, stretches a spring, or shifts a lever, until the governor is so far out of calibration that it can't keep the engine in its sweet spot. The engine surges, hunts, or stalls.
+
+**Check these things:**
+
+1. **Does the linkage move freely?** Push the throttle arm gently by hand. It should swing smoothly with no binding or sticking. If it's stiff, clean the pivot points and check for bent parts.
+2. **Are all springs attached?** A spring that's popped off its hook will completely disable the governor. Look for any disconnected spring ends and reattach them.
+3. **Has anything vibrated loose?** Check for adjustment screws that have backed out, or linkage bolts that have loosened. If you can see that something has shifted, try to restore it to its original position — look for wear marks or clean spots that show where parts used to sit.
+4. **Try tightening the governor tension screw slightly.** This dampens the oscillation and can calm surging. Small adjustments — a quarter turn at a time.
+
+- That helped! → [[#Good Enough For The Burn]]
+- Still surging or stalling → A Greasemonkey can recalibrate the governor properly. → [[#Greasemonkey assistance]]
+
+## Starts but runs poorly
 
 Your generator starts — that's the hard part done. But something's not right. Maybe it's hunting up and down, maybe it dies when you open the choke, maybe it's belching smoke or making an alarming noise.
 
@@ -417,7 +441,7 @@ The engine speeds up, slows down, speeds up, slows down — a rhythmic hunting t
 
   4. **Blocked fuel cap vent.** Try loosening the fuel cap while the engine runs. If the surging stops, the cap vent is blocked — the tank can't breathe, so fuel delivery becomes inconsistent. Clean or replace the cap.
 
-- **No, choke doesn't help** → The problem is probably the governor rather than fuel mixture. The governor keeps engine speed steady by adjusting the throttle (see [[#Fires then dies]] for how it works). Check that the governor linkage moves freely, all springs are attached and haven't stretched, and nothing has vibrated loose. Try tightening the governor tension screw slightly — this dampens the oscillation. If that doesn't help, → [[#Greasemonkey assistance]]
+- **No, choke doesn't help** → The problem is probably the governor rather than fuel mixture. → [[#Check governor]]
 
 ## Dies when choke opens
 
@@ -526,7 +550,7 @@ The engine is running smoothly but nothing happens when you plug something in. T
 
 - **Voltage looks correct but appliances don't work** → Check the frequency with a multimeter if possible. Some sensitive electronics — laptops, audio equipment, certain chargers — need clean, stable power. Standard generators produce a "modified sine wave" that some devices don't tolerate well. For audio equipment specifically, check that you have a proper ground rod connected. If your appliances work on a different generator or mains power, your generator's output quality may simply not be compatible. → [[#Greasemonkey assistance]]
 
-## It overheated {#overheated}
+## It overheated
 
 The engine got very hot and shut itself down — or you noticed it was overheating and switched it off. Either way, don't try to restart it straight away. Give it at least 15–20 minutes to cool down. Trying to restart a severely overheated engine can make the damage worse.
 
@@ -572,3 +596,8 @@ Once the engine has cooled, let's see if it still works.
 
 ## Good Enough For The Burn
 
+The little book you hold in your hands has many lessons to teach, but this is perhaps the most valuable one you can learn:
+
+Sometimes it isn't perfect, but it's Good Enough For The Burn.
+
+Now get out there and have some fun.
