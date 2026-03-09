@@ -29,6 +29,15 @@ The technical stack is as follows:
  - A Makefile orchestrates this build pipeline
  - A github workflow runs the makefile on commit to `main`
 
+## Building
+
+To successfully build with `make`, two dependencies need to be installed on the system:
+
+ - [Pandoc](https://pandoc.org/)
+ - [UV](https://docs.astral.sh/uv/#installation)
+
+A github workflow (`.github/workflows/build-pdf.yml`) rebuilds the pdfs on commit to `main`.
+
 ## Content
 
 Each book covers a particular area of mechanical diagnostic: generators, vehicles, bikes, solar panels. Within a book, the reader is guided through steps of questions, diagnostics, and actions.
@@ -50,6 +59,3 @@ Each book will borrow inspiration from the classic Goosebumps series of choose y
 
 Each manual is written in Markdown. Any text editor can be used to edit them, but a good markdown editor might be more pleasant to work with. The current workflow uses HackMD to collaboratively edit and save back to github.
 
-## Building
-
-A github workflow rebuilds the pdfs on commit to `main`.
