@@ -200,6 +200,12 @@ There's nothing more you can do here without major disassembly. → [[#Greasemon
 
 ## Greasemonkey assistance
 
+You've reached the point where you need a hand. The fix might need more specialist knowledge, tools, or experience than this handbook covers. That's fine — you've done the hard work of diagnosing the problem, and that's half the battle.
+
+**Find a Greasemonkey.** They're volunteers — be nice, and tell them what you've already tried. The diagnostic steps you've worked through will save them a lot of time.
+
+**Check the Greasemonkey manual.** If you want to go deeper — carburettor strip-downs, valve adjustments, electrical fault-finding — the Greasemonkey manual covers the technical procedures in detail. Ask a Greasemonkey for a copy, or find one in the workshop.
+
 ## Check fuel
 
 Fuel is half of the *suck* — the engine pulls in a mix of fuel and air on every intake stroke. No fuel, nothing to ignite.
@@ -280,8 +286,7 @@ Do you see a spark? It should be a crisp blue flash between the electrodes.
 2. **Check the kill switch wire.** The ignition coil — *a small black box mounted near the flywheel* — has a thin wire running to the kill switch. When this wire is grounded, it kills the spark on purpose. If it's shorted, frayed, or touching the frame, the engine thinks it's been switched off. Try disconnecting this wire from the coil and testing for spark again. (You'll need to reconnect it to stop the engine — or just pull the plug boot off.)
 3. **Check the spark plug gap.** The gap between the two electrodes at the tip of the plug should be about 0.6–0.7mm — roughly the thickness of a paperclip wire. Too wide and the spark can't jump; too narrow and it's too weak. Bend the outer electrode gently to adjust.
 4. **Try a known-good spark plug.** Even if the plug looks fine, swapping it is quick and rules it out completely. Ask the Greasemonkeys — they usually have spares.
-5. **Check the coil gap.** The ignition coil needs to sit close to the flywheel — about 0.25mm, roughly the thickness of a business card or piece of cardboard. If it's been knocked out of alignment, it won't generate enough charge. Loosen the coil mounting screws, slide a piece of cardboard between the coil and flywheel as a spacer, push the coil snug against it, tighten the screws, then pull the cardboard out.
-6. **Inspect the plug boot and HT lead.** Look for cracks, burn marks, or a loose connection. A damaged lead can leak the spark to the engine block before it reaches the plug.
+5. **Inspect the plug boot and HT lead.** Look for cracks, burn marks, or a loose connection. A damaged lead can leak the spark to the engine block before it reaches the plug.
 
 **Got spark now?**
 
@@ -311,35 +316,11 @@ A blocked jet is the single most common carburettor problem, especially on gener
 - It starts! → [[#Good Enough For The Burn]]
 - Still nothing → Keep reading.
 
-### Cleaning the Carburettor
+If none of that worked, the carburettor probably needs to come apart for a proper clean. Stripping a carb in the desert is doable, but it's fiddly — small brass jets, tiny passages, and dust everywhere. This is one for the Greasemonkey manual, or better yet, a Greasemonkey in person.
 
-If you've exhausted the quick fixes above, the carburettor probably needs to come apart for a proper clean. This is absolutely doable, but if you haven't done it before, it's worth having a Greasemonkey with you.
+→ [[#Greasemonkey assistance]]
 
-If you're doing it yourself, find the cleanest, most sheltered workspace you can. Lay down a clean cloth to work on — you'll be handling small brass jets that you do not want to drop in the dust. Take photos as you go — it makes reassembly much easier.
-
-1. **Remove the air filter** to expose the carburettor.
-2. **Disconnect the fuel line** from the carburettor. Have a rag ready — some fuel will spill.
-3. **Disconnect the throttle linkage and choke linkage.** These are thin metal rods or cables connecting the carburettor to the governor and choke lever. Note where they attach — take a photo.
-4. **Unbolt the carburettor** from the engine. It's usually held on by two bolts or nuts. There'll be a gasket between the carb and the engine — a thin flat seal. Try not to tear it, but don't panic if you do — the Greasemonkeys have gasket paper to make a new one.
-5. **Remove the bowl.** It's the cup-shaped part at the bottom, held on by a single bolt or screw up through the centre. Be careful — there's a rubber O-ring or gasket between the bowl and the body that you'll need to reuse.
-
-Now you can see inside:
-
-6. **Find and remove the main jet.** It's a small brass nozzle screwed into the centre post inside the bowl area. Unscrew it gently with a flat screwdriver.
-7. **Find and remove the idle jet.** This is smaller and usually screwed into the side of the carburettor body, near where it meets the engine. It can be easy to miss.
-8. **Clean every jet and passage.** Spray carb cleaner through each jet and hold it up to the light — you should see a clear, round hole. If it's blocked, poke through it gently with a fine wire (a single strand from a wire brush works well, or a thin guitar string). Don't use anything that could widen the hole — these are precision-sized.
-9. **Check the float.** Make sure it swings freely and the needle isn't stuck, bent, or dirty.
-10. **Spray carb cleaner through every hole and passage** in the carburettor body. There are more internal passages than you'd expect — spray into every opening you can find.
-11. **Clean the bowl.** Wipe out any sediment or residue.
-12. **Reassemble in reverse order.** Make sure the O-ring and gaskets are seated properly, the jets are snug (don't overtighten — brass strips easily), and all linkages are reconnected.
-
-### After Cleaning
-
-Refit the carburettor, reconnect the fuel line, and [[#Starting a generator|try starting the generator]].
-
-- It starts and runs! → Well done. If the carburettor was clogged with old fuel residue, consider draining and replacing the fuel in the tank too, or it'll clog up again. → [[#Good Enough For The Burn]]
-- It starts but runs rough, surges, or dies → The carb might need adjustment, or there's another issue. → [[#Starts but runs poorly]]
-- Still won't start → You've ruled out fuel delivery and the carburettor. Let's check if the engine has compression. → [[#Check compression]]
+If the carb has been cleaned and it still won't start, let's check if the engine has compression. → [[#Check compression]]
 
 ## Check compression
 
@@ -380,25 +361,11 @@ There are three main places compression can escape:
 **The oil test** can help narrow it down. Squirt a small amount of engine oil into the cylinder through the spark plug hole — about a teaspoon. The oil temporarily seals the gap between the piston rings and cylinder wall. Now redo the thumb test or compression test.
 
 - **Compression improved noticeably** → The piston rings are worn. The oil filled the gap temporarily. This is a major repair — the engine needs new rings or a rebore. → [[#Greasemonkey assistance]]
-- **No change** → The leak is probably at the valves or head gasket. → [[#Check valves]]
+- **No change** → The leak is probably at the valves or head gasket — these aren't field fixes. → [[#Greasemonkey assistance]]
 
 If the oil test didn't help either, you're likely looking at a blown head gasket, a cracked cylinder head, or serious internal wear. These aren't field repairs — but a Greasemonkey can confirm the diagnosis and advise whether it's fixable at the burn or whether you need to find an alternative generator.
 
 → [[#Greasemonkey assistance]]
-
-## Check valves
-
-The valves control the flow of air and fuel into the cylinder, and exhaust gases out of it. There are two: the **intake valve** (lets the fuel-air mix in) and the **exhaust valve** (lets the burnt gases out). They open and close in precise timing with the piston. If they're not seating properly, not moving at all, or out of adjustment, the engine will lose compression, run poorly, or refuse to start.
-
-The valves are inside the cylinder head, but you can see the top of the valve train by removing the **valve cover** — *the metal cover on the top or side of the cylinder head, usually held on by a few bolts. There'll be a gasket underneath it.*
-
-With the cover off, you'll see the **rocker arms** — small levers that pivot to push the valves open — and the **valve springs** that pull them closed again.
-
-Now slowly rotate the engine by hand (pull the starter cord gently, or turn the flywheel) and watch the valves move.
-
-- **Both valves move up and down smoothly** → The valves are mechanically OK. The problem might be that they're not sealing properly — carbon buildup on the valve seats, or incorrect valve clearance. Try adjusting the clearance: with the engine at top dead centre (both valves closed), check the gap between each rocker arm and valve stem with a feeler gauge. Intake should be about 0.10–0.15mm, exhaust about 0.20mm. If you don't have a feeler gauge, a Greasemonkey will. → [[#Greasemonkey assistance]]
-- **One or both valves aren't moving** → Something is broken — a pushrod, a rocker arm, or a cam lobe. → [[#Greasemonkey assistance]]
-- **Movement looks sloppy or uneven** → The valve clearance is probably way off, or a component is worn. → [[#Greasemonkey assistance]]
 
 ## Check governor
 
@@ -492,7 +459,7 @@ The generator runs fine, you turn it off, and then it won't start again until it
 
 Common causes:
 
-1. **Tight valve clearance.** Metal expands when hot. If the valve clearance is set too tight (or has tightened over time), the valves may not fully close when the engine is hot, which kills compression. The engine starts fine cold because the clearance is adequate, but once hot, the valves hold open a crack. Check and adjust valve clearance — intake: 0.10–0.15mm, exhaust: ~0.20mm. → [[#Check valves]]
+1. **Tight valve clearance.** Metal expands when hot. If the valve clearance is set too tight (or has tightened over time), the valves may not fully close when the engine is hot, which kills compression. The engine starts fine cold because the clearance is adequate, but once hot, the valves hold open a crack. Valve adjustment needs a feeler gauge and some know-how. → [[#Greasemonkey assistance]]
 
 2. **Failing ignition coil.** The coil's insulation can break down when hot, leaking voltage instead of sending it to the spark plug. Test for spark when the engine is hot and refusing to start — if there's no spark but spark returns once it cools, the coil is the problem. → [[#Greasemonkey assistance]]
 
@@ -522,20 +489,15 @@ The engine is running but making a sound that wasn't there before, or doesn't so
 
 - **Rattling — a loose, metallic vibration.** This is usually something external that's come loose. Check and tighten: muffler bolts, engine mounting bolts, external covers and shields, and the frame bolts. Generators vibrate constantly and hardware works itself loose over time. A few minutes with a wrench usually sorts it. → [[#Good Enough For The Burn]]
 
-- **Tapping or clicking — a fast, rhythmic tick from the top of the engine.** This is usually the valves. The valve clearance may have opened up (or was never set correctly), so the rocker arms are slapping against the valve stems instead of pressing smoothly. It won't stop the engine immediately but it'll get worse and can eventually damage the valve train. → [[#Check valves]]
+- **Tapping or clicking — a fast, rhythmic tick from the top of the engine.** This is usually the valves. The valve clearance may have opened up (or was never set correctly), so the rocker arms are slapping against the valve stems instead of pressing smoothly. It won't stop the engine immediately but it'll get worse and can eventually damage the valve train. → [[#Greasemonkey assistance]]
 
 ## Exhaust from intake
 
 If you can see or feel exhaust gases coming out of the carburettor or air intake — instead of out of the exhaust pipe — something is wrong with the exhaust valve. When the exhaust valve should be closed, it's staying open (or partly open), and combustion gases are blowing back the wrong way through the cylinder.
 
-This could be:
+This is a valve problem — a stuck valve, a broken spring, a worn cam lobe, or incorrect clearance. It needs hands-on diagnosis inside the cylinder head.
 
-- A stuck exhaust valve
-- A broken or weak valve spring
-- A worn camshaft lobe that's no longer lifting the valve properly
-- Incorrect valve clearance
-
-→ [[#Check valves]]
+→ [[#Greasemonkey assistance]]
 
 ## No power at outlets
 
@@ -582,19 +544,13 @@ Most small generators are air-cooled — the engine has metal fins cast into the
 
 5. **Oil level low?** Oil doesn't just lubricate — it also carries heat away from internal components. Low oil means more friction and less cooling. Check the level and top up if needed.
 
-### Has it been damaged?
+### Can it still run?
 
-Once the engine has cooled, let's see if it still works.
+Once the engine has cooled, try pulling the cord or turning the flywheel by hand.
 
-**Can the engine turn?** Try pulling the cord or turning the flywheel by hand.
-
-- **No, it's stuck** → The heat may have caused the piston to seize in the cylinder. → [[#Engine won't turn]]
-- **Yes, it turns** → Good sign. Keep going.
-
-**Check compression.** Do the thumb test — remove the spark plug, thumb over the hole, pull the cord.
-
-- **Strong compression** → The internals are probably OK. Clean the cooling fins, fix whatever caused the overheating, check the oil, and [[#Starting a generator|try starting again]]. If it runs, keep a close eye on it — reduce the load and monitor the temperature. → [[#Good Enough For The Burn]]
-- **Weak or no compression** → The heat likely damaged something in the top end — a blown head gasket is the most common result of overheating, followed by a warped cylinder head. These stop the cylinder from sealing, which kills compression. → [[#Greasemonkey assistance]]
+- **It won't turn** → The heat may have caused the piston to seize in the cylinder. → [[#Engine won't turn]]
+- **It turns** → Good sign. Clean the cooling fins, fix whatever caused the overheating, check the oil, and [[#Starting a generator|try starting again]]. If it runs, keep a close eye on it — reduce the load and monitor the temperature. → [[#Good Enough For The Burn]]
+- **It turns but won't start** → The heat may have caused internal damage. → [[#Greasemonkey assistance]]
 
 ### Preventing it next time
 
