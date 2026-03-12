@@ -6,9 +6,15 @@
 
 Generator given up the ghost? Ware-and-tear-wolves getting you down? Don't get spooked — most generator problems come down to four things, and you can check all of them with your hands, eyes, tentacles, and a few simple tools.
 
-Every engine needs four  things to run: **Fuel**, **Spark**, **Compression**, and **Air**. Petrol has to get from the tank, through the tap and lines, into the carburettor, and into the cylinder. The spark plug has to fire at the right moment to ignite it. The cylinder has to be sealed tight so the fuel-air mixture gets squeezed and explodes with force. And clean air has to mix with the fuel in the right ratio.
+Every engine runs on a four-beat cycle: **Suck, Squeeze, Bang, Blow.** The piston pulls in a mix of air and fuel (*suck*), compresses it into a tiny space (*squeeze*), the spark plug ignites it (*bang*), and the burnt gases get pushed out the exhaust (*blow*). Over and over, hundreds of times a minute.
 
-If any one of these is missing, the engine won't run. Our job is to figure out which one it is.
+If your engine won't run, one of these four beats is failing. Our job is to figure out which one. In practice, that means checking four things:
+
+- **Fuel** and **air** — the ingredients for the *suck*
+- **Compression** — the *squeeze* that makes ignition possible
+- **Spark** — the *bang* that lights it all off
+
+Almost every generator problem traces back to one of these. The diagnostic checks in this book will walk you through each one.
 
 But first — before you touch a single bolt — do these quick checks. This is hard-won Greasemonkey wisdom, and skipping them has wasted more hours than we'd like to admit:
 
@@ -108,7 +114,7 @@ If you've got it cranking but it won't start → [[#Cranks but won't catch]].
 
 The engine is turning over — you can hear it churning on the electric start, or feel it compressing and releasing on the pull cord — but it never fires. It's just spinning without catching.
 
-This is actually good news. Your engine can move, which rules out a lot of mechanical problems. Something is missing from the recipe: either there's no spark to ignite the fuel, or no fuel is reaching the cylinder, or (less commonly) the cylinder isn't holding compression.
+This is actually good news. Your engine can move, which rules out a lot of mechanical problems. But something is missing — fuel, spark, or compression. Either there's no spark to ignite the fuel, no fuel reaching the cylinder, or (less commonly) the cylinder isn't holding compression.
 
 There's a quick test that can save you a lot of time. If you have a can of carburettor cleaner or starter fluid, spray a short burst into the air intake — *the air filter is a plastic or metal housing on the side of the engine, covering the carburettor intake. Remove or open it to access the intake opening*.
 
@@ -120,7 +126,7 @@ Now try to start it. Did it fire, even for a second?
 
 ## Fires then dies
 
-The engine catches — you hear it cough, sputter, maybe even run for a second or two — and then it dies. Every time. This is actually encouraging: it means spark and compression are probably working. The engine *wants* to run. Something is stopping it from staying lit.
+The engine catches — you hear it cough, sputter, maybe even run for a second or two — and then it dies. Every time. This is actually encouraging: you got a *bang*, which means spark and compression are probably working. The engine *wants* to run. Something is stopping it from staying lit.
 
 Let's work through the most likely causes, quickest fixes first.
 
@@ -196,6 +202,8 @@ There's nothing more you can do here without major disassembly. → [[#Greasemon
 
 ## Check fuel
 
+Fuel is half of the *suck* — the engine pulls in a mix of fuel and air on every intake stroke. No fuel, nothing to ignite.
+
 The fuel system is a chain: tank → fuel tap → fuel line → fuel filter → carburettor → cylinder. If any link is blocked, fuel can't reach the engine. We're going to check each one, starting from the carburettor and working backwards towards the tank.
 
 *The carburettor is the fist-sized metal body bolted to the side of the engine, usually behind the air filter*. It's really amazing! It mixes fuel with air in the right ratio before feeding it into the cylinder. A fuel line — *a small rubber or plastic hose* — runs from the fuel tap on the tank down to the carburettor.
@@ -235,7 +243,7 @@ Try starting with the bypass bottle.
 
 ## Check spark
 
-The spark plug is what lights the fire inside the engine. Once every engine cycle, it produces a tiny bolt of electricity that ignites the compressed fuel-air mixture. No spark, no bang, no power.
+The spark plug is what lights the fire inside the engine — the *bang* in our four-beat cycle. Once every engine cycle, it produces a tiny bolt of electricity that ignites the compressed fuel-air mixture. No spark, no bang, no power.
 
 The spark plug screws into the cylinder head — the metal block at the top of the engine. You'll see a thick rubber boot pushed onto the top of it, with a wire (called the HT lead) running back to the ignition coil.
 
@@ -282,7 +290,7 @@ Do you see a spark? It should be a crisp blue flash between the electrodes.
 
 ## Check carburettor
 
-The carburettor is a surprisingly simple device. Fuel sits in a small reservoir called the bowl at the bottom. When the engine runs, air rushes through the carburettor's throat, and that airflow sucks fuel up through tiny holes called jets — like drinking through a straw. The fuel mixes with the air and gets pulled into the cylinder.
+The carburettor is where the *suck* actually happens. It's a surprisingly simple device. Fuel sits in a small reservoir called the bowl at the bottom. When the engine runs, air rushes through the carburettor's throat, and that airflow sucks fuel up through tiny holes called jets — like drinking through a straw. The fuel mixes with the air and gets pulled into the cylinder.
 
 The two main jets are the **main jet** (feeds fuel when the engine is running at speed) and the **idle jet** or **pilot jet** (feeds fuel at idle and low speed). These jets are tiny brass nozzles with holes smaller than a pin. It takes almost nothing to block them — a grain of dust, a flake of rust, a bit of dried-up old fuel.
 
@@ -335,7 +343,7 @@ Refit the carburettor, reconnect the fuel line, and [[#Starting a generator|try 
 
 ## Check compression
 
-If you've got spark and fuel but the engine still won't start, the problem might be compression. Remember the four-stroke cycle: the piston moves up inside the cylinder and squeezes the fuel-air mixture into a small space before the spark plug ignites it. If the cylinder can't hold that pressure — because of a leak somewhere — the mixture won't compress enough to ignite, and the engine won't fire.
+If you've got spark and fuel but the engine still won't start, the problem might be compression — the *squeeze*. The piston moves up inside the cylinder and compresses the fuel-air mixture into a tiny space before the spark plug ignites it. If the cylinder can't hold that pressure — because of a leak somewhere — the mixture won't compress enough to ignite, and the engine won't fire.
 
 Think of it like trying to inflate a balloon with a hole in it. No matter how hard you blow, the air just escapes.
 
@@ -412,9 +420,9 @@ The problem is that these springs and levers are exposed, and generators vibrate
 
 ## Starts but runs poorly
 
-Your generator starts — that's the hard part done. But something's not right. Maybe it's hunting up and down, maybe it dies when you open the choke, maybe it's belching smoke or making an alarming noise.
+Your generator starts — that's the hard part done. All four beats are working, but something's off. Maybe it's hunting up and down, maybe it dies when you open the choke, maybe it's belching smoke or making an alarming noise.
 
-An engine that runs but runs badly is almost always a fuel mixture problem — too much fuel, not enough fuel, or air getting in where it shouldn't. Less commonly it's ignition, overheating, or mechanical wear. The symptom tells us where to look.
+An engine that runs but runs badly is almost always a fuel mixture problem — the *suck* is wrong. Too much fuel, not enough fuel, or air getting in where it shouldn't. Less commonly it's ignition, overheating, or mechanical wear. The symptom tells us where to look.
 
 What's it doing?
 
