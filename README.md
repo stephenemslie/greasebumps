@@ -42,14 +42,13 @@ A github workflow (`.github/workflows/build-pdf.yml`) rebuilds the pdfs on commi
 
 Each book covers a particular area of mechanical diagnostic: generators, vehicles, bikes, solar panels. Within a book, the reader is guided through steps of questions, diagnostics, and actions.
 
- 1. Start with a pre-flight checklist, based on Greasemonkey experience
- 2. Ask questions to narrow done the problem
- 3. Each problem section gives some orientation before jumping off to diagnostic pages
- 4. A diagnotic page is both a page to learn about the topic, and to use that knowledge to identify or rule out a cause
- 5. This jumps off to further diagnostics, or actions to make a fix
+ 1. Orient the reader: start with a pre-flight checklist, based on Greasemonkey experience. Provide a mental model for what's to come.
+ 2. Triage. Broad questions lead the reader into the right branch using non-technical observations.
+ 3. Narrow. Within each branch, we ask progressively more specific questions, designed to lead us into core diagnostics at the heart of the fix.
+ 4. Diagnose. Diagnostic hub pages center around the most important functional areas of the device being fixed (Fuel, Spark, etc.). This is where the reader learns how these core components work, why they're checking something, and what to do with that knowledge. Due to their nature as fundamental touchpoints for the device, multiple branches can lead into the same diagnostic pages. This helps keep the book lean.
+ 5. Resolve. A diagnostic page might contain solutions, or might jump off to the Greasemonkey handbook for more complex or in-depth topics.
 
- - Books are intentionally small. Be concise.
- - Where possible, use diagrams.
+The key organising principle is that the book gets more technical as you go deeper, but never more technical than the reader needs.
 
 ## Style
 
