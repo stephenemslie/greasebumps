@@ -89,19 +89,17 @@ Did it start on the pull cord?
 
 When you hit the start button or turn the key, you hear something — clicks, a whirr, or the starter trying to spin — but the engine itself isn't turning over.
 
-The most common cause is a weak battery. The starter motor draws a lot of current, and if the battery can't deliver enough, you'll hear it struggling but the engine won't budge.
+The sound you hear tells you a lot. The electric starting circuit is a chain: **battery → solenoid → starter motor → engine**. Each link in that chain makes a different sound when it fails, so listen carefully and match what you hear:
 
-Try a jump start — connect a known good battery or jump from a vehicle battery. Does the engine crank now?
+**Rapid clicking** — like a machine gun, click-click-click-click. The starter solenoid — *a small box near the battery or starter motor* — is trying to engage but can't hold. Each click is the solenoid pulling in, the voltage dropping under load, the solenoid releasing, the voltage recovering, and it trying again. This is the most common cause: a **weak battery**. Try a jump start — connect a known good battery or jump from a vehicle battery.
 
- - Yes, it cranks and starts! → Weak battery. Charge or replace it. → [[#Good Enough For The Burn]]
- - Yes, it cranks but won't catch → The engine can turn — that's good. Something else is stopping it from firing. → [[#Cranks but won't catch]]
- - Still just clicking → Probably not the battery. Keep reading.
+- It cranks and starts! → Weak battery. Charge or replace it. → [[#Good Enough For The Burn]]
+- It cranks but won't catch → The engine can turn, so the starting circuit is fine. Something else is stopping it from firing. → [[#Cranks but won't catch]]
+- Still just rapid clicking → Check the battery connections — even with a jump, a corroded or loose terminal can't pass enough current. Clean them up, tighten them, and try again. If it still won't crank → [[#Check the starting circuit]]
 
-**Listen to the click.** The starter solenoid — *a small box near the battery or starter motor* — should make a solid "clunk" when you press start.
+**Single loud clunk, then nothing.** The solenoid fires and holds — it got enough power — but the starter motor isn't spinning. The starter motor is *a small cylindrical motor, about the size of a drink can, bolted to the side of the engine block near the bottom, with thick wires running to it*. Give it a firm tap with a wrench while someone presses start — this can free stuck internal brushes. If that doesn't work → [[#Greasemonkey assistance]]
 
- - **No click at all** → The solenoid isn't getting the signal. Check wiring from the start button to the solenoid, and check for blown fuses. → [[#Check the starting circuit]]
- - **Single loud click, nothing else** → The solenoid works but the starter motor isn't spinning. The starter motor is *a small cylindrical motor — about the size of a drink can — bolted to the side of the engine block near the bottom, with thick wires running to it*. Give it a firm tap with a wrench while someone presses start — this can free stuck internal brushes. If that doesn't work → [[#Greasemonkey assistance]]
- - **Rapid clicking** (like a machine gun) → The battery is almost dead — enough power to click the solenoid, but not enough to turn the starter. Try a jump start again with clean, tight connections.
+**Whirring but the engine doesn't turn.** The starter motor is spinning but isn't engaging the engine — the drive mechanism that connects the starter to the flywheel isn't catching. → [[#Greasemonkey assistance]]
 
 If you've got it cranking but it won't start → [[#Cranks but won't catch]].
 
@@ -165,7 +163,7 @@ The electric start system is simple: battery → switch → solenoid → starter
 
 Do you have a multimeter? If so, check the battery voltage. If not, that's fine — we can still narrow it down.
 
- 1. Look at the battery terminals. Are they corroded, loose, or disconnected? Clean them up and tighten them. Even a thin layer of white or green crust can stop enough current getting through.
+ 1. Look at the battery terminals. Are they corroded, loose, or disconnected? Even a thin layer of white or green crust can stop enough current getting through. To clean them: turn the engine switch off, disconnect the negative (−) terminal first, then the positive (+). Scrub the terminals and clamp insides with a wire brush, sandpaper, or even a rough cloth — you want shiny metal. Reconnect positive first, then negative. Tighten them firmly.
  2. Check the ground strap — the wire from the battery negative to the engine block or frame. If it's loose or broken, nothing will work. You can test this with jumper lead as a temporary ground.
  3. Check the key switch or kill switch. Is it in the right position? Try wiggling it. If you have a multimeter, check for continuity through the switch.
  4. Look for inline fuses on the battery or ignition wiring. A blown fuse is a quick fix.
@@ -182,7 +180,7 @@ If you're comfortable with it, try bridging the starter solenoid terminals with 
 
 You've tried pulling the cord or turning the engine by hand, and it won't budge — or it moves a tiny bit and hits a wall. Something inside is physically stopping the engine from rotating.
 
-**First, make sure the spark plug is out.** If you haven't already removed it, do that now. A cylinder full of fuel or oil can create hydraulic lock — the piston tries to compress liquid, which unlike air doesn't compress, and the engine jams solid. With the plug out, any trapped liquid can escape. You might get a squirt of fuel or oil out of the hole — that's fine, that's the problem leaving.
+**First, make sure the spark plug is out.** If you haven't already removed it, do that now. A cylinder full of fuel or oil can create hydraulic lock — the piston tries to compress liquid, which unlike air doesn't compress, and the engine jams solid. With the plug out, any trapped liquid can escape. You might get a squirt of fuel or oil out of the hole — that's fine, that's the problem leaving. Make sure it doesn't leave directly onto the Tankwa ground though. Have a rag or something around to catch any drips.
 
 Try turning the engine again with the plug out.
 
@@ -197,14 +195,6 @@ Try turning the engine again with the plug out.
 **If the engine is truly seized** — the piston is welded to the cylinder wall by heat or lack of oil, or there's major internal damage — this is not a field repair. Common causes are running without oil, severe overheating, or a broken connecting rod jamming against the crankcase.
 
 There's nothing more you can do here without major disassembly. → [[#Greasemonkey assistance]]
-
-## Greasemonkey assistance
-
-You've reached the point where you need a hand. The fix might need more specialist knowledge, tools, or experience than this handbook covers. That's fine — you've done the hard work of diagnosing the problem, and that's half the battle.
-
-**Find a Greasemonkey.** They're volunteers — be nice, and tell them what you've already tried. The diagnostic steps you've worked through will save them a lot of time.
-
-**Check the Greasemonkey manual.** If you want to go deeper — carburettor strip-downs, valve adjustments, electrical fault-finding — the Greasemonkey manual covers the technical procedures in detail. Ask a Greasemonkey for a copy, or find one in the workshop.
 
 ## Check fuel
 
@@ -559,6 +549,14 @@ Once the engine has cooled, try pulling the cord or turning the flywheel by hand
 - Provide shade without blocking airflow
 - Don't overload — in hot conditions, aim for 75% of rated capacity or less
 - Check oil every day
+
+## Greasemonkey assistance
+
+You've reached the point where you need a hand. The fix might need more specialist knowledge, tools, or experience than this handbook covers. That's fine — you've done the hard work of diagnosing the problem, and that's half the battle.
+
+**Find a Greasemonkey.** They're volunteers — be nice, and tell them what you've already tried. The diagnostic steps you've worked through will save them a lot of time.
+
+**Check the Greasemonkey manual.** If you want to go deeper — carburettor strip-downs, valve adjustments, electrical fault-finding — the Greasemonkey manual covers the technical procedures in detail. Ask a Greasemonkey for a copy, or find one in the workshop.
 
 ## Good Enough For The Burn
 
