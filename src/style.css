@@ -11,7 +11,28 @@
     font-family: 'SourceSerifPro';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/SourceSerifPro-Regular.ttf') format('truetype');
+    src: url('fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    font-style: italic;
+    font-weight: 700;
+    src: url('fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 /* ---- Page setup ---- */
@@ -60,10 +81,10 @@ img.cover {
 }
 
 @page :left {
-  margin: 20mm 10mm 12mm 15mm;
+  margin: 20mm 10mm 20mm 15mm;
 }
 @page :right {
-  margin: 20mm 15mm 12mm 10mm;
+  margin: 20mm 15mm 20mm 10mm;
 }
 
 /* ---- Base typography ---- */
@@ -116,9 +137,9 @@ li {
 /* ---- Internal links: show target page number ---- */
 
 a[href^="#"] {
-    color: #2d6a1e;
+    color: inherit;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 a[href^="#"]::after {
