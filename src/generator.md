@@ -4,7 +4,7 @@
 
 ## Start here
 
-Generator given up the ghost? Ware-and-tear-wolves getting you down? Don't get spooked - most generator problems come down to four things, and you can check all of them with your hands, eyes, tentacles, and a few simple tools.
+Generator given up the ghost? Ware-and-tear-wolves making you howl with frustration? Don't get spooked - most generator problems come down to four things, and you can check all of them with your hands, eyes, tentacles, and a few simple tools.
 
 Every engine runs on a four-beat cycle: **Suck, Squeeze, Bang, Blow.** The piston pulls in a mix of air and fuel (*suck*), compresses it into a tiny space (*squeeze*), the spark plug ignites it (*bang*), and the burnt gases get pushed out the exhaust (*blow*). Over and over, hundreds of times a minute.
 
