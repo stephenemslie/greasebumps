@@ -26,12 +26,14 @@ But first - before you touch a single bolt - do these quick checks. This is hard
 
 *Before we dive in, a small intro to the Greasemonkey workshop. The workshop is a Radical Self Reliance space, and we encourage anyone to use it at any time. That doesn't include the back of house, and it doesn't mean that you'll get help from a Greasemonkey unless one is on shift. Please be respectful of the tools, the space, and the volunteers who run it.*
 
+*Remember, petrol burns, exhaust is bad for you, electricity bites. Be careful, use your head, and if something feels beyond you, find a Greasemonkey.*
+
 With that out of the way, on to our pre-flight checks!
 
- - Are you correctly starting your generator? - [[#Starting a generator]]
+ - **Are you correctly starting your generator?**  [[#Starting a generator]]
  - **Fuel in the tank?** Is it the right kind - normal petrol, not 2-stroke mix or diesel?
  - **Oil level OK?** Check the dipstick - *it's usually a twist-off cap or pull-out stick on the side of the engine block, often yellow*. Most generators have a low-oil cutoff. If it won't start, this alone might be why.
- - **Fuel tap open?** *The fuel tap is a small lever or knob where the fuel line connects to the bottom of the tank.* Vertical is usually open, horizontal is closed - but just try both to be sure.
+ - **Fuel tap open?** *The fuel tap is a small lever or knob where the fuel line connects to the bottom of the tank.* Usually the valve lever will be aligned with the flow of the fuel. So if the lever is in line with the pipe, it's likely open. And if it's perpendicular to the pipe, it is likely closed.
  - **Engine switch on?** Make sure the key or switch is in the "on" position.
  - **Any loose wires?** Especially the oil sensor and voltage sensor connectors. If they're disconnected, nothing will work.
 
@@ -71,7 +73,7 @@ If you're on a pull-start generator and you're not sure whether the engine is "t
   6. Turn the engine switch to "on."
   7. Start the engine.
     - Electric start: Press the start button or turn the key.
-    - Pull start: Pull the cord gently until you feel resistance - stop - then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again. 
+    - Pull start: Pull the cord gently until you feel resistance - stop - then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again.
   8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. 
   9. Let it warm up. Give it a minute or two before plugging anything in.
 
@@ -123,7 +125,7 @@ There's a quick test that can save you a lot of time. If you have a can of carbu
 Now try to start it. Did it fire, even for a second?
 
 - **Yes, it fired briefly on the spray!** → The spark and compression are probably fine. The problem is fuel delivery - fuel isn't making it from the tank into the cylinder. → [[#Check fuel]]
-- **No, nothing at all** → Fuel might not be the issue. Let's check if there's a spark. → [[#Check Spark]]
+- **No, nothing at all** → Fuel might not be the issue. Let's check if there's a spark. → [[#Check spark]]
 - **I don't have carb cleaner** → No worries. Let's start with the spark check - it's quick and doesn't need any spray. → [[#Check spark]]
 
 ## Fires then dies
@@ -175,10 +177,10 @@ Do you have a multimeter? If so, check the battery voltage. If not, that's fine 
 
 Still nothing?
 
-If you're comfortable with it, try bridging the starter solenoid terminals with a heavy jumper wire or screwdriver. This bypasses the switch and control circuit and sends power directly to the starter.
+If you're comfortable with it, try bridging the starter solenoid terminals with a heavy jumper wire or screwdriver (DANGER - don't electrocute yourself!). This bypasses the switch and control circuit and sends power directly to the starter.
 
  - The engine cranks! → The solenoid or control circuit is at fault, but the engine and starter motor are fine. You can keep starting it this way in a pinch, or seek Greasemonkey assistance for a proper fix. [[#Greasemonkey assistance]]
- - Still nothing → The starter motor itself may be dead, or the battery is too flat to turn it. Try a jump start from a car battery or another charged battery, and if that doesn't work. → [[#Greasemonkey assistance]]
+ - Still nothing → The starter motor itself may be dead, or the battery is too flat to turn it. Try a jump start from a car battery or another charged battery of the correct voltage (12V), and if that doesn't work. → [[#Greasemonkey assistance]]
 
 ## Engine won't turn
 
@@ -222,11 +224,9 @@ No fuel flow - let's find the blockage:
 
 1. Is the fuel tap actually open? It sounds obvious, but tap positions vary between generators. Try turning it to every position and checking flow each time.
 2. Open the fuel tank cap and listen. Do you hear a hiss or rush of air? If so, the tank vent is blocked - the tank can't breathe, so a vacuum builds up inside and fuel can't flow out. Try running with the cap loose. If fuel flows now, clean or replace the cap.
-3. Is there a fuel filter? *It's a small inline cylinder - sometimes transparent - somewhere along the fuel line between the tank and carburettor.* At the burn, these
-   clog up fast with dust and sediment. If it looks dirty or discoloured, replace it. The Greasemonkeys usually have spares if you ask nicely.
+3. Is there a fuel filter? *It's a small inline cylinder - sometimes transparent - somewhere along the fuel line between the tank and carburettor.* At the burn, these clog up fast with dust and sediment. If it looks dirty or discoloured, replace it. The Greasemonkeys usually have spares if you ask nicely.
 4. Look inside the fuel tank. Is it rusty inside? Rust means water has been getting in, and flakes of rust can block the fuel outlet. Is there gunk or sediment at the bottom? Is the fuel discoloured or does it smell stale? Old fuel - more than a month or two - can turn to varnish and gum up the works.
-5. Check for vapour lock. Is any part of the fuel line running close to the engine or exhaust, where it gets hot? Heat can boil the fuel inside the line, creating a
-   gas bubble that blocks flow. Feel along the line - if a section is hot to the touch, reroute it away from the heat source. Let it cool down and try again.
+5. Check for vapour lock. Is any part of the fuel line running close to the engine or exhaust, where it gets hot? Heat can boil the fuel inside the line, creating a gas bubble that blocks flow. Feel along the line - if a section is hot to the touch, reroute it away from the heat source. Let it cool down and try again.
 
 ## Bypass fuel test
 
@@ -256,9 +256,7 @@ Let's pull the spark plug and have a look at it.
 What does the tip look like?
 
 - Wet with fuel → The engine is flooding - too much fuel is getting in but not igniting. Dry the plug off, check that the choke isn't stuck closed, and refit it. → [[#Starting a generator|Try starting again]]
-- Black and sooty, or caked in carbon → The plug is fouled. This happens when the engine runs "rich" - too much fuel, not enough air - and unburned fuel leaves carbon deposits on the plug. The carbon creates a shortcut for the spark, so instead of jumping cleanly across the gap, the electricity leaks through the soot and
-  the plug can't ignite anything. Clean the tip with a wire brush or rag, or replace the plug if you have a spare. If you have carb cleaner, spray a burst into the
-  air intake and try starting - it ignites more easily than petrol and burns hot enough to help clear carbon from the plug and combustion chamber. Once it starts, let it run for a few minutes to burn off the rest. If the plug keeps fouling, the engine is still running rich - check that the choke is fully open once warm, the air filter is clean, and the carburettor isn't flooding.
+- Black and sooty, or caked in carbon → The plug is fouled. This happens when the engine runs "rich" - too much fuel, not enough air - and unburned fuel leaves carbon deposits on the plug. The carbon creates a shortcut for the spark, so instead of jumping cleanly across the gap, the electricity leaks through the soot and the plug can't ignite anything. Clean the tip with a wire brush or rag, or replace the plug if you have a spare. If you have carb cleaner, spray a burst into the air intake and try starting - it ignites more easily than petrol and burns hot enough to help clear carbon from the plug and combustion chamber. Once it starts, let it run for a few minutes to burn off the rest. If the plug keeps fouling, the engine is still running rich - check that the choke is fully open once warm, the air filter is clean, and the carburettor isn't flooding.
 - Dry and clean-ish → No fuel is reaching the cylinder. The plug isn't the problem. → [[#Check fuel]]
 - Looks OK, not sure what's wrong → Let's test whether it's actually producing a spark. → [[#Test for spark]]
 
@@ -295,7 +293,7 @@ The two main jets are the **main jet** (feeds fuel when the engine is running at
 
 A blocked jet is the single most common carburettor problem, especially on generators that have been sitting unused. But stripping and cleaning a carburettor in the desert is a last resort - dust gets everywhere, small parts vanish into the playa, and you can make things worse. Let's try a few things first.
 
-### Try Before You Strip
+### Try before you strip
 
 1. **Tap the carburettor body** firmly with the handle of a screwdriver or a wrench. The float inside - a small buoyancy device that controls fuel flow, like the float in a toilet cistern - can get stuck. A tap often frees it.
 
@@ -310,9 +308,7 @@ A blocked jet is the single most common carburettor problem, especially on gener
 - It starts! → [[#Good Enough For The Burn]]
 - Still nothing → Keep reading.
 
-If none of that worked, the carburettor probably needs to come apart for a proper clean. Stripping a carb in the desert is doable, but it's fiddly - small brass jets, tiny passages, and dust everywhere. This is one for the Greasemonkey manual, or better yet, a Greasemonkey in person.
-
-→ [[#Greasemonkey assistance]]
+If none of that worked, the carburettor probably needs to come apart for a proper clean. Stripping a carb in the desert is doable, but it's fiddly - small brass jets, tiny passages, and dust everywhere. This is one for the Greasemonkey manual, and likely a Greasemonkey in person → [[#Greasemonkey assistance]]
 
 If the carb has been cleaned and it still won't start, let's check if the engine has compression. → [[#Check compression]]
 
@@ -322,7 +318,7 @@ If you've got spark and fuel but the engine still won't start, the problem might
 
 Think of it like trying to inflate a balloon with a hole in it. No matter how hard you blow, the air just escapes.
 
-### The Thumb Test
+### The thumb test
 
 This is rough but surprisingly useful. You don't need any tools.
 
@@ -336,7 +332,7 @@ You should feel strong, rhythmic puffs of air pushing against your thumb - that'
 - **Weak puffs, or barely anything** → Low compression. Keep reading.
 - **Nothing at all** → No compression. Keep reading.
 
-### Using a Compression Tester
+### Using a compression tester
 
 If the Greasemonkeys have a compression tester (ask - they usually do), you can get a more precise reading. Screw the tester into the spark plug hole, crank the engine a few times, and read the gauge.
 
@@ -344,7 +340,7 @@ If the Greasemonkeys have a compression tester (ask - they usually do), you can 
 - **Around 60 PSI** → May be normal if the engine has a compression release mechanism (some do, to make pull-starting easier). Ask a Greasemonkey if you're not sure.
 - **Below 60 PSI** → Low compression. Something is leaking. Keep reading.
 
-### Low Compression - Where's the Leak?
+### Low compression - where's the leak?
 
 There are three main places compression can escape:
 
@@ -564,6 +560,6 @@ You've reached the point where you need a hand. The fix might need more speciali
 
 ## Good Enough For The Burn
 
-Maybe you solved the riddle of the rumble, or maybe you didn't. Now you've come to the most important lesson the Greasemonkeys have to teach you: sometimes it isn't perfect, but it's Good Enough For The Burn.
+Maybe you solved the riddle of the rumble, or maybe you didn't. Now you've come to the most important lesson the Greasemonkeys have to teach: sometimes it isn't perfect, but it's Good Enough For The Burn.
 
-Now get out there and have some fun.
+Time to down tools and go have some fun.
