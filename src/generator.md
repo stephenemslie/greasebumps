@@ -16,7 +16,12 @@ If your engine won't run, one of these four beats is failing. Our job is to figu
 
 Almost every generator problem traces back to one of these. The diagnostic checks in this book will walk you through each one.
 
-But first - before you touch a single bolt - do these quick checks. This is hard-won Greasemonkey wisdom, and skipping them has wasted more hours than we'd like to admit:
+*Before we dive in, a small intro to the Greasemonkey workshop. The workshop is a Radical Self Reliance space, and we encourage anyone to use it at any time. That doesn't include the back of house, and it doesn't mean that you'll get help from a Greasemonkey unless one is on shift. Please be respectful of the tools, the space, and the volunteers who run it.*
+
+*Remember, petrol burns, exhaust is bad for you, electricity bites. Be careful, use your head, and if something feels beyond you, find a Greasemonkey.*
+
+First let's do a few quick checks to cover our bases for some of the more common issues we could solve right away. This is hard-won Greasemonkey wisdom, and skipping them has wasted more hours than we'd like to admit.
+
 
 ![](images/honda/honda_open_overview.png)
 
@@ -24,13 +29,7 @@ But first - before you touch a single bolt - do these quick checks. This is hard
 
 ## Pre-flight checks
 
-*Before we dive in, a small intro to the Greasemonkey workshop. The workshop is a Radical Self Reliance space, and we encourage anyone to use it at any time. That doesn't include the back of house, and it doesn't mean that you'll get help from a Greasemonkey unless one is on shift. Please be respectful of the tools, the space, and the volunteers who run it.*
-
-*Remember, petrol burns, exhaust is bad for you, electricity bites. Be careful, use your head, and if something feels beyond you, find a Greasemonkey.*
-
-With that out of the way, on to our pre-flight checks!
-
- - **Are you correctly starting your generator?**  [[#Starting a generator]]
+ - **Are you correctly starting your generator?** [[#Starting a generator]]
  - **Fuel in the tank?** Is it the right kind - normal petrol, not 2-stroke mix or diesel?
  - **Oil level OK?** Check the dipstick - *it's usually a twist-off cap or pull-out stick on the side of the engine block, often yellow*. Most generators have a low-oil cutoff. If it won't start, this alone might be why.
  - **Fuel tap open?** *The fuel tap is a small lever or knob where the fuel line connects to the bottom of the tank.* Usually the valve lever will be aligned with the flow of the fuel. So if the lever is in line with the pipe, it's likely open. And if it's perpendicular to the pipe, it is likely closed.
@@ -74,7 +73,7 @@ If you're on a pull-start generator and you're not sure whether the engine is "t
   7. Start the engine.
     - Electric start: Press the start button or turn the key.
     - Pull start: Pull the cord gently until you feel resistance - stop - then pull firmly. Don't just yank it from slack, that can damage the starter. If it doesn't start, let it stop turning completely before pulling again.
-  8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time. 
+  8. Open the choke gradually. Once the engine catches and warms up, slide the choke towards "open." If it stumbles, close it a bit and give it more time.
   9. Let it warm up. Give it a minute or two before plugging anything in.
 
 
